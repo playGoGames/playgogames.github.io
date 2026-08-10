@@ -2,3 +2,4 @@ node_modules/
 _site/
 .DS_Store
 _삭제하세요/
+_*.zip

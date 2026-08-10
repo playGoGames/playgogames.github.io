@@ -219,47 +219,7 @@ h1, h2, p { margin: 0; }
   letter-spacing: -.01em;
 }
 
-/* ---------- 모달 안 '게임 페이지 열기' ---------- */
-.modal-more { margin-top: 18px; font-size: 14px; }
-.modal-more a { color: var(--accent); font-weight: 700; }
-.modal-more a:hover { text-decoration: underline; text-underline-offset: 3px; }
-
-/* ---------- 게임 개별 페이지 ---------- */
-.gamepage { padding: clamp(28px, 4vw, 44px) 0 clamp(56px, 7vw, 88px); }
-.gamepage .wrap { max-width: 760px; }
-.gamepage-back { margin: 0 0 22px; padding: 0; border: 0; }
-
-.gamepage-art {
-  position: relative; overflow: hidden; aspect-ratio: 1024 / 500;
-  border-radius: 22px;
-  background: linear-gradient(135deg, #f7efe9 0%, #ebe6f2 100%);
-  box-shadow: var(--shadow);
-}
-.gamepage-art img { width: 100%; height: 100%; object-fit: cover; }
-.gamepage-art.is-missing::after {
-  content: attr(data-label) " 이미지";
-  position: absolute; inset: 0; display: grid; place-items: center;
-  font-size: 13px; font-weight: 600; color: #b6aa9c;
-}
-
-.gamepage-body { margin-top: clamp(26px, 4vw, 38px); text-align: center; }
-.gamepage-body h1 {
-  font-size: clamp(26px, 4vw, 38px); font-weight: 800;
-  letter-spacing: -.025em; line-height: 1.3; color: var(--brand-navy);
-}
-.gamepage-en { margin-top: 6px; font-size: 13px; color: var(--muted); letter-spacing: .06em; }
-.gamepage-tagline { margin-top: 18px; font-size: clamp(16px, 2.2vw, 18px); font-weight: 600; }
-.gamepage-desc {
-  margin: 12px auto 0; max-width: 560px;
-  font-size: 15.5px; line-height: 1.9; color: var(--ink-2);
-}
-.gamepage .store-links { justify-content: center; margin-top: 28px; }
-
 /* ---------- 푸터 메일 ---------- */
 .foot-mail { font-size: 14px; font-weight: 600; }
 .foot-mail a { color: var(--brand-navy); }
 .foot-mail a:hover { color: var(--accent); }
-
-@media (max-width: 560px) {
-  .gamepage-art { border-radius: 18px; }
-}

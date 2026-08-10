@@ -2,7 +2,7 @@
 layout: base.njk
 permalink: /
 bodyClass: home
-description: "짧은 순간에도 즐거움이 남는 게임. 플레이고게임즈는 버섯버섯버섯, 고양이 수박게임, 트리플 타일 마스터를 만든 캐주얼 게임 개발사입니다."
+description: "짧은 순간에도 즐거움이 남는 게임. 플레이고게임즈는 고양이 수박게임, 버섯버섯버섯, 트리플 타일 마스터를 만든 캐주얼 게임 개발사입니다."
 ---
 {% from "partials/icons.njk" import storeButtons %}
 
@@ -44,9 +44,10 @@ description: "짧은 순간에도 즐거움이 남는 게임. 플레이고게임
       <h2 id="ttl-{{ g.slug }}">{{ g.title }}</h2>
       <p class="modal-en">{{ g.titleEn }}</p>
       <p class="modal-tagline">{{ g.tagline }}</p>
-      <p class="modal-desc">{{ g.desc }}</p>
+      {% for line in g.desc %}
+      <p class="modal-desc">{{ line }}</p>
+      {% endfor %}
       {{ storeButtons(g.stores) }}
-      <p class="modal-more"><a href="/{{ g.slug }}/">게임 페이지 열기 →</a></p>
     </div>
   </div>
 </div>

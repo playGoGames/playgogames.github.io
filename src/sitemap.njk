@@ -8,12 +8,6 @@ eleventyExcludeFromCollections: true
     <loc>{{ site.url }}/</loc>
     <lastmod>{{ page.date | isoDate }}</lastmod>
   </url>
-  {%- for g in games %}
-  <url>
-    <loc>{{ site.url }}/{{ g.slug }}/</loc>
-    <lastmod>{{ page.date | isoDate }}</lastmod>
-  </url>
-  {%- endfor %}
   <url>
     <loc>{{ site.url }}/privacy/</loc>
     <lastmod>{{ page.date | isoDate }}</lastmod>
