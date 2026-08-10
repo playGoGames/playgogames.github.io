@@ -44,9 +44,7 @@ description: "짧은 순간에도 즐거움이 남는 게임. 플레이고게임
       <h2 id="ttl-{{ g.slug }}">{{ g.title }}</h2>
       <p class="modal-en">{{ g.titleEn }}</p>
       <p class="modal-tagline">{{ g.tagline }}</p>
-      {% for line in g.desc %}
-      <p class="modal-desc">{{ line }}</p>
-      {% endfor %}
+      <p class="modal-desc">{% for line in g.desc %}{% if not loop.first %}<br>{% endif %}{{ line }}{% endfor %}</p>
       {{ storeButtons(g.stores) }}
     </div>
   </div>
