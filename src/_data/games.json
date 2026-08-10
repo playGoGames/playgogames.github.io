@@ -1,0 +1,40 @@
+[
+  {
+    "slug": "triplemushroom",
+    "title": "버섯버섯버섯",
+    "titleEn": "Triple Mushroom",
+    "tagline": "귀여운 버섯을 세 개씩 모아 없애는 매치 퍼즐",
+    "desc": "화면 가득 쌓인 버섯 중에서 같은 모양 세 개를 찾아 없애세요. 규칙은 단순하지만 한 판만 더 하게 되는, 한 손으로 즐기는 캐주얼 퍼즐입니다.",
+    "art": "/assets/images/games/triplemushroom.png",
+    "icon": "/assets/images/games/triplemushroom-icon.png",
+    "stores": {
+      "appstore": "https://apps.apple.com/us/app/id6745580300",
+      "googleplay": "https://play.google.com/store/apps/details?id=com.playgogames.triplemushroom"
+    }
+  },
+  {
+    "slug": "catwatermelon",
+    "title": "고양이 수박게임",
+    "titleEn": "Cat Watermelon",
+    "tagline": "같은 고양이끼리 만나면 더 큰 고양이로!",
+    "desc": "떨어뜨린 고양이가 같은 고양이를 만나면 한 단계 더 큰 고양이가 됩니다. 어디에 놓을지 고민하는 사이 어느새 시간이 훌쩍 지나가는 합치기 퍼즐입니다.",
+    "art": "/assets/images/games/catwatermelon.png",
+    "icon": "/assets/images/games/catwatermelon-icon.png",
+    "stores": {
+      "appstore": "https://apps.apple.com/us/app/id6740145697",
+      "googleplay": "https://play.google.com/store/apps/details?id=com.lots.catwatermelon"
+    }
+  },
+  {
+    "slug": "tripletilemaster",
+    "title": "트리플 타일 마스터",
+    "titleEn": "Triple Tile Master",
+    "tagline": "타일 세 장을 짝지어 보드를 깨끗하게",
+    "desc": "겹겹이 쌓인 타일 속에서 같은 그림 세 장을 찾아 슬롯으로 옮기세요. 순서를 잘못 고르면 슬롯이 가득 차버리는, 한 수 앞을 읽는 재미가 있는 타일 매치 게임입니다.",
+    "art": "/assets/images/games/tripletilemaster.png",
+    "icon": "/assets/images/games/tripletilemaster-icon.png",
+    "stores": {
+      "googleplay": "https://play.google.com/store/apps/details?id=com.playgogames.tripletilemaster"
+    }
+  }
+]

@@ -1,0 +1,53 @@
+---
+layout: base.njk
+permalink: /
+bodyClass: home
+description: "짧은 순간에도 즐거움이 남는 게임. 플레이고게임즈는 버섯버섯버섯, 고양이 수박게임, 트리플 타일 마스터를 만든 캐주얼 게임 개발사입니다."
+---
+{% from "partials/icons.njk" import storeButtons %}
+
+<section class="stage">
+  <div class="wrap">
+    <h1 class="brand">
+      <img src="/assets/images/common/logo.png" alt="PLAYGO GAMES" width="1200" height="300">
+    </h1>
+    <p class="stage-lead">짧은 순간에도 즐거움이 남는 게임</p>
+
+    <ul class="icon-grid">
+      {% for g in games %}
+      <li>
+        <button class="icon-btn" type="button" data-open="dlg-{{ g.slug }}" aria-haspopup="dialog">
+          <span class="icon-img">
+            <img src="{{ g.icon }}" alt="" width="512" height="512"{% if not loop.first %} loading="lazy"{% endif %}>
+          </span>
+          <span class="icon-name">{{ g.title }}</span>
+        </button>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+{% for g in games %}
+<div class="modal" id="dlg-{{ g.slug }}" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="ttl-{{ g.slug }}">
+    <button class="modal-close" type="button" data-close aria-label="닫기">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+
+    <div class="modal-art media" data-label="{{ g.title }}">
+      <img src="{{ g.art }}" alt="{{ g.title }}" width="1024" height="500" loading="lazy">
+    </div>
+
+    <div class="modal-body">
+      <h2 id="ttl-{{ g.slug }}">{{ g.title }}</h2>
+      <p class="modal-en">{{ g.titleEn }}</p>
+      <p class="modal-tagline">{{ g.tagline }}</p>
+      <p class="modal-desc">{{ g.desc }}</p>
+      {{ storeButtons(g.stores) }}
+      <p class="modal-more"><a href="/{{ g.slug }}/">게임 페이지 열기 →</a></p>
+    </div>
+  </div>
+</div>
+{% endfor %}

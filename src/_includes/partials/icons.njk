@@ -1,0 +1,16 @@
+{% macro storeButtons(stores) %}
+{% if stores.appstore or stores.googleplay %}
+<div class="store-links">
+  {% if stores.appstore %}
+  <a class="store-badge" href="{{ stores.appstore }}" target="_blank" rel="noopener" aria-label="App Store에서 다운로드">
+    <img src="/assets/images/common/badge-appstore.png" alt="App Store에서 다운로드" width="233" height="78">
+  </a>
+  {% endif %}
+  {% if stores.googleplay %}
+  <a class="store-badge" href="{{ stores.googleplay }}" target="_blank" rel="noopener" aria-label="Google Play에서 다운로드">
+    <img src="/assets/images/common/badge-googleplay.png" alt="Google Play에서 다운로드" width="233" height="78">
+  </a>
+  {% endif %}
+</div>
+{% endif %}
+{% endmacro %}
