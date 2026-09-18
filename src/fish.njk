@@ -1,0 +1,253 @@
+---
+permalink: /fish/
+eleventyExcludeFromCollections: true
+---
+{% set p = fish %}
+{% macro badge(store, code, alt) %}
+{%- set b = p.badges[store] -%}
+<img src="{{ b.byLang[code] if b.byLang[code] else b.default }}" alt="{{ alt }}" width="{{ b.w }}" height="{{ b.h }}">
+{%- endmacro %}
+{% macro steamBtn(t, cls) %}
+<a class="{{ cls }}" href="{{ p.steam }}" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.98 2C6.66 2 2.3 6.03 1.8 11.2l5.4 2.23a3.03 3.03 0 0 1 1.72-.53h.15l2.4-3.47v-.05a4.04 4.04 0 1 1 4.04 4.04h-.1l-3.42 2.44v.13a3.04 3.04 0 0 1-6.03.53L2.1 14.5A10.02 10.02 0 0 0 11.98 22c5.52 0 10-4.48 10-10s-4.48-10-10-10zm-3.7 15.17l-1.24-.51a2.28 2.28 0 1 0 1.18-3.03l1.28.53a1.68 1.68 0 1 1-1.22 3.01zM18.2 12a2.69 2.69 0 1 0-5.38 0 2.69 2.69 0 0 0 5.38 0zm-4.71 0a2.03 2.03 0 1 1 4.05 0 2.03 2.03 0 0 1-4.05 0z"/></svg>
+  <span>{{ t.steamCta }}</span>
+</a>
+{% endmacro %}
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>魚は飛ばない / Where Fish Fly / 물고기는 날지 않는다 — 事前登録</title>
+<meta name="description" content="{{ p.ja.tagline }} {{ p.ja.genre }}。{{ p.ja.releaseDate }}配信予定。事前登録受付中。">
+<meta name="theme-color" content="#e7edfb">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ site.nameEn }}">
+<meta property="og:title" content="魚は飛ばない / Where Fish Fly">
+<meta property="og:description" content="{{ p.en.tagline }} Pre-register now.">
+<meta property="og:image" content="{{ site.url }}/assets/images/games/fish/keyart.webp">
+<meta property="og:url" content="{{ site.url }}/fish/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="canonical" href="{{ site.url }}/fish/">
+<link rel="icon" href="/assets/images/common/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/images/common/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="/assets/css/fish.css">
+</head>
+<body>
+
+<nav class="fs-langs" aria-label="Language">
+  <button type="button" data-lang="ja" aria-pressed="true">日本語</button>
+  <button type="button" data-lang="en" aria-pressed="false">EN</button>
+  <button type="button" data-lang="ko" aria-pressed="false">한국어</button>
+</nav>
+
+{% for code in ["ja", "en", "ko"] %}
+{% set t = p[code] %}
+<div class="fs-doc" data-doc="{{ code }}"{% if code != "ja" %} hidden{% endif %}>
+
+  <header class="fs-hero">
+    <div class="fs-keyart">
+      <img src="/assets/images/games/fish/keyart.webp" alt="{{ t.title }}" width="1024" height="500"{% if code == "ja" %} fetchpriority="high"{% else %} loading="lazy"{% endif %}>
+    </div>
+
+    <div class="fs-wrap fs-hero-in">
+      <div class="fs-icon">
+        <img src="/assets/images/games/fish/icon.webp" alt="" width="512" height="512">
+      </div>
+      <h1 class="fs-title">{{ t.title }}</h1>
+      <p class="fs-title-sub">{{ t.titleSub }}</p>
+      <p class="fs-tagline">{{ t.tagline }}</p>
+      <p class="fs-genre">{{ t.genre }}</p>
+      <p class="fs-release"><span>{{ t.releaseLabel }}</span> {{ t.releaseDate }}</p>
+    </div>
+  </header>
+
+  <section class="fs-cta">
+    <div class="fs-wrap">
+      <h2 class="fs-cta-head">{{ t.ctaHead }}</h2>
+      <div class="fs-stores">
+        {# googleplay / appstore 링크를 fish.json 에서 비우면 해당 배지가 사라집니다 #}
+        {% if p.googleplay %}
+        <a class="fs-store" href="{{ p.googleplay }}" target="_blank" rel="noopener">
+          {{ badge("googleplay", code, t.pregegAlt) }}
+        </a>
+        {% endif %}
+        {% if p.appstore %}
+        <a class="fs-store" href="{{ p.appstore }}" target="_blank" rel="noopener">
+          {{ badge("appstore", code, "App Store") }}
+        </a>
+        {% endif %}
+      </div>
+      {{ steamBtn(t, "fs-steam") }}
+      <p class="fs-cta-note">
+        {% for line in t.ctaNote %}{{ line }}{% if not loop.last %}<br>{% endif %}{% endfor %}
+        {% if t.regionNote %}<br><span class="fs-region-note">{{ t.regionNote }}</span>{% endif %}
+        <br><span class="fs-steam-note">{{ t.steamNote }}</span>
+      </p>
+    </div>
+  </section>
+
+  <section class="fs-quote">
+    <div class="fs-wrap"><p>{{ t.quote }}</p></div>
+  </section>
+
+  <section class="fs-sec">
+    <div class="fs-wrap">
+      <h2>{{ t.storyHead }}</h2>
+      {% for para in t.story %}<p class="fs-para">{{ para }}</p>{% endfor %}
+    </div>
+  </section>
+
+  <section class="fs-sec">
+    <div class="fs-wrap"><h2>{{ t.shotsHead }}</h2></div>
+    <div class="fs-shots" role="group" aria-label="{{ t.shotsHead }}">
+      {% for n in [1,2,3] %}
+      <figure><img src="/assets/images/games/fish/shot-{{ n }}.webp" alt="" width="1920" height="1080" loading="lazy"></figure>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="fs-sec">
+    <div class="fs-wrap">
+      <h2>{{ t.playHead }}</h2>
+      <ul class="fs-play">
+        {% for s in t.play %}
+        <li class="fs-play-{{ loop.index }}">
+          <p class="fs-play-when">{{ s.when }}</p>
+          <h3>{{ s.t }}</h3>
+          <p>{{ s.d }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+      <ol class="fs-flow">
+        {% for step in t.flow %}<li>{{ step }}</li>{% endfor %}
+      </ol>
+      <p class="fs-flow-note">{{ t.flowNote }}</p>
+    </div>
+  </section>
+
+  <section class="fs-sec">
+    <div class="fs-wrap">
+      <h2>{{ t.featuresHead }}</h2>
+      <ul class="fs-features">
+        {% for f in t.features %}
+        <li>
+          <span class="fs-f-icon" aria-hidden="true">{{ f.i }}</span>
+          <div><h3>{{ f.t }}</h3><p>{{ f.d }}</p></div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <section class="fs-sec">
+    <div class="fs-wrap">
+      <h2>{{ t.meaningHead }}</h2>
+      <p class="fs-pull">{{ t.meaningPull }}</p>
+      {% for para in t.meaning %}<p class="fs-para">{{ para }}</p>{% endfor %}
+    </div>
+  </section>
+
+  <section class="fs-sec">
+    <div class="fs-wrap">
+      <h2>{{ t.recommendHead }}</h2>
+      <ul class="fs-reco">
+        {% for r in t.recommend %}<li>{{ r }}</li>{% endfor %}
+      </ul>
+      <p class="fs-reco-note">{{ t.recommendNote }}</p>
+    </div>
+  </section>
+
+  <section class="fs-sec">
+    <div class="fs-wrap">
+      <h2>{{ t.infoHead }}</h2>
+      <dl class="fs-info">
+        {% for row in t.info %}
+        <div><dt>{{ row.k }}</dt><dd>{{ row.v }}</dd></div>
+        {% endfor %}
+      </dl>
+      <div class="fs-notice">
+        <p class="fs-notice-head">{{ t.noticeHead }}</p>
+        <p>{{ t.notice }}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="fs-closing">
+    <div class="fs-wrap"><p>{{ t.closing }}</p></div>
+  </section>
+
+  <footer class="fs-foot">
+    <div class="fs-wrap">
+      <a class="fs-foot-link" href="/">{{ t.siteLink }} →</a>
+      <p class="fs-foot-mail"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      <img class="fs-foot-logo" src="/assets/images/common/logo.png" alt="{{ site.nameEn }}" width="1200" height="300">
+      <p class="fs-copy">© {{ site.copyrightYear }} {{ site.nameEn }}. All rights reserved.</p>
+    </div>
+  </footer>
+
+</div>
+{% endfor %}
+
+<div class="fs-sticky" hidden>
+  {% if p.googleplay %}
+  <a class="fs-sticky-btn" href="{{ p.googleplay }}" target="_blank" rel="noopener">
+    <img src="{{ p.badges.googleplay.default }}" alt="Google Play"
+         width="{{ p.badges.googleplay.w }}" height="{{ p.badges.googleplay.h }}">
+  </a>
+  {% endif %}
+  <a class="fs-sticky-steam" href="{{ p.steam }}" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.98 2C6.66 2 2.3 6.03 1.8 11.2l5.4 2.23a3.03 3.03 0 0 1 1.72-.53h.15l2.4-3.47v-.05a4.04 4.04 0 1 1 4.04 4.04h-.1l-3.42 2.44v.13a3.04 3.04 0 0 1-6.03.53L2.1 14.5A10.02 10.02 0 0 0 11.98 22c5.52 0 10-4.48 10-10s-4.48-10-10-10zm-3.7 15.17l-1.24-.51a2.28 2.28 0 1 0 1.18-3.03l1.28.53a1.68 1.68 0 1 1-1.22 3.01zM18.2 12a2.69 2.69 0 1 0-5.38 0 2.69 2.69 0 0 0 5.38 0zm-4.71 0a2.03 2.03 0 1 1 4.05 0 2.03 2.03 0 0 1-4.05 0z"/></svg>
+    <span data-sticky-steam>Steam</span>
+  </a>
+</div>
+
+<script>
+(function () {
+  var docs = document.querySelectorAll("[data-doc]");
+  var btns = document.querySelectorAll("[data-lang]");
+  var LANGS = ["ja", "en", "ko"];
+  var STEAM = { ja: {{ p.ja.steamCta | dump | safe }}, en: {{ p.en.steamCta | dump | safe }}, ko: {{ p.ko.steamCta | dump | safe }} };
+
+  function apply(lang) {
+    if (LANGS.indexOf(lang) < 0) lang = "ja";
+    docs.forEach(function (d) { d.hidden = d.getAttribute("data-doc") !== lang; });
+    btns.forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-lang") === lang)); });
+    document.documentElement.lang = lang;
+    var s = document.querySelector("[data-sticky-steam]");
+    if (s) s.textContent = STEAM[lang];
+    try { history.replaceState(null, "", "#" + lang); } catch (e) {}
+  }
+
+  var initial = (location.hash || "").replace("#", "");
+  if (LANGS.indexOf(initial) < 0) {
+    var nav = (navigator.language || "en").toLowerCase();
+    initial = nav.indexOf("ja") === 0 ? "ja" : nav.indexOf("ko") === 0 ? "ko" : "en";
+  }
+  apply(initial);
+
+  btns.forEach(function (b) {
+    b.addEventListener("click", function () { apply(b.getAttribute("data-lang")); });
+  });
+
+  /* 히어로의 CTA가 화면에서 사라지면 하단 고정 버튼을 띄웁니다 */
+  var sticky = document.querySelector(".fs-sticky");
+  if (sticky && "IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      var anyVisible = entries.some(function (e) {
+        var doc = e.target.closest("[data-doc]");
+        return e.isIntersecting && doc && !doc.hidden;
+      });
+      sticky.hidden = anyVisible;
+    }, { rootMargin: "-72px 0px 0px 0px" });
+    document.querySelectorAll(".fs-cta").forEach(function (el) { io.observe(el); });
+  }
+})();
+</script>
+</body>
+</html>

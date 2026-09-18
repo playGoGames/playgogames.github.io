@@ -1,0 +1,364 @@
+{
+  "slug": "fish",
+  "_linkNote": "googleplay 사전등록은 현재 일본 스토어에서만 진행 중. 비우면 배지가 사라집니다.",
+  "googleplay": "https://play.google.com/store/apps/details?id=com.playgogames.fish",
+  "appstore": "",
+  "steam": "https://store.steampowered.com/app/3362130",
+  "_badgeNote": "공식 사전예약 배지 파일은 src/assets/images/common/ 에 둡니다. byLang 에 언어별 파일이 없으면 default 를 씁니다.",
+  "badges": {
+    "googleplay": {
+      "default": "/assets/images/common/badge-googleplay-prereg.png",
+      "byLang": {},
+      "w": 565,
+      "h": 168
+    },
+    "appstore": {
+      "default": "/assets/images/common/badge-appstore-preorder.png",
+      "byLang": {},
+      "w": 503,
+      "h": 168
+    }
+  },
+  "ko": {
+    "lang": "한국어",
+    "title": "물고기는 날지 않는다",
+    "titleSub": "Where Fish Fly · 魚は飛ばない",
+    "tagline": "일상의 작은 수수께끼를 풀다.",
+    "genre": "학원 일상 미스터리 · 추리 어드벤처",
+    "releaseLabel": "출시 예정",
+    "releaseDate": "모바일 2026년 10월",
+    "quote": "“내 인생에 특별한 일은 절대 일어나지 않을 것이다. 현실은 지독하게 뻔하니까.”",
+    "ctaHead": "사전예약 진행 중",
+    "ctaNote": [
+      "사전예약은 무료입니다.",
+      "출시되면 가장 먼저 알려드립니다."
+    ],
+    "pregegAlt": "Google Play 사전등록",
+    "steamCta": "Steam 위시리스트에 담기",
+    "steamNote": "Steam판은 기존 제목 《502호》로 등록되어 있습니다.",
+    "storyHead": "게임 소개",
+    "story": [
+      "환상을 믿지 않는 냉소적인 고등학생 주인공은 평범하고 편안한 삶을 목표로 기숙형 고등학교에 입학합니다. 하지만 새 학기에 적응하기도 전에 기묘한 소문들이 들려옵니다. 언뜻 들으면 판타지 같은 이야기에 주인공은 말도 안 된다며 코웃음치지만, 기숙사 502호 룸메이트들의 눈은 반짝입니다.",
+      "주인공은 세상이 그렇게까지 흥미롭지 않다는 것을 증명하기 위해 직접 미스터리의 진상을 밝히기로 합니다. 호기심 가득한 룸메이트들도 날카로운 조력자이자 든든한 협력자로 나섭니다. 누군가는 별것 아니라는 것을 증명하려고, 누군가는 무슨 일이 있었는지 궁금해서. 서로 다른 이유로 모인 이들의 추리가 시작됩니다.",
+      "교내의 작은 수수께끼 뒤에는 입시 압박, 비교와 열등감, 진로 고민 등 한국 고등학생들이 마주하는 현실이 숨어 있습니다. 에피소드형으로 이어지는 사건을 하나씩 풀어가며, 주인공은 시시하고 뻔하다고 여겼던 일상에서 뜻밖의 의미를 발견합니다."
+    ],
+    "featuresHead": "이런 게임이에요",
+    "features": [
+      {
+        "i": "🔍",
+        "t": "사람이 죽지 않는 코지 미스터리",
+        "d": "사건 현장도 범인도 없습니다. 무대는 교실과 기숙사, 단서는 무심한 대화와 작은 위화감. 피비린내 나는 사건이 아니라 일상 속 수수께끼를 다루는 미스터리입니다."
+      },
+      {
+        "i": "🧠",
+        "t": "당신이 탐정입니다",
+        "d": "모은 단서를 조합해 가설을 세우세요. 증거로 뒷받침된 가설은 추리로 자라납니다. 추리가 진행될수록 화면 위에서 답이 조금씩 가까워지기 때문에, 곧 풀린다는 손맛과 함께 결론에 다가갈 수 있습니다."
+      },
+      {
+        "i": "🌙",
+        "t": "낮에는 조사, 밤에는 추리",
+        "d": "낮에는 학교 곳곳을 돌아다니며 탐문하고 관찰하세요. 밤에는 기숙사 방에 모여 룸메이트들과 추리 타임을 갖습니다."
+      },
+      {
+        "i": "👭",
+        "t": "502호의 네 사람",
+        "d": "성격도 관심사도 다른 네 사람이 각자의 시선으로 하나의 수수께끼를 풀어갑니다."
+      }
+    ],
+    "playHead": "플레이",
+    "play": [
+      {
+        "when": "낮",
+        "t": "조사",
+        "d": "학교를 돌아다니며 탐문과 관찰로 단서를 모읍니다. 누군가 무심코 건넨 말, 자그마한 흔적, 그냥 지나치기에는 수상한 광경까지. 주인공이 보고, 듣고, 느끼는 모든 것이 사건을 풀어갈 단서가 됩니다."
+      },
+      {
+        "when": "밤",
+        "t": "추리",
+        "d": "기숙사 502호에 모여 룸메이트들과 단서를 연결합니다. 수집한 정보를 바탕으로 가설을 세우고, 증거로 확인하며 사건의 전말에 다가갑니다."
+      }
+    ],
+    "flow": [
+      "단서 수집",
+      "가설 설정",
+      "가설 검증",
+      "결론"
+    ],
+    "flowNote": "읽는 데서 그치지 않습니다. 가설을 세우고 증거로 확인하는 과정 자체가 플레이입니다.",
+    "meaningHead": "제목에 담긴 의미",
+    "meaning": [
+      "주인공에게 세상은 이 문장처럼 당연하고 뻔한 곳입니다. 환상 같은 일은 일어나지 않고, 아무리 기묘한 소문에도 결국 시시한 이유가 있을 거라고 믿습니다.",
+      "하지만 기숙사 502호 룸메이트들과 수수께끼를 풀어가며, 주인공은 자신이 너무 쉽게 지나쳤던 것들을 마주합니다. 사소한 말에 담긴 고민을 알아차리고, 이해할 수 없었던 행동에도 나름의 사정이 있었다는 것을 알게 됩니다. 잘 안다고 생각했던 친구에게서 낯선 모습을 발견하기도 합니다.",
+      "기묘한 사건에 현실적인 이유가 있다고 해서, 그 안에 담긴 이야기까지 시시한 것은 아닙니다. 《물고기는 날지 않는다》는 뻔하다고 단정했던 일상이, 누군가를 알아갈수록 조금씩 궁금해지는 이야기입니다."
+    ],
+    "meaningPull": "물고기는 날지 않는다.",
+    "recommendHead": "이런 분께 추천합니다",
+    "recommend": [
+      "시체도 범인도 없는 ‘일상의 수수께끼’ 미스터리가 좋은 분",
+      "청춘물과 학원물의 잔잔한 공기를 좋아하는 분",
+      "읽기만 하는 게 아니라 직접 머리로 추리하고 싶은 분"
+    ],
+    "recommendNote": "소설 『빙과』처럼 일상 속 수수께끼와 인물들의 관계를 함께 즐기는 청춘 미스터리를 좋아하신다면, 기숙사 502호의 이야기를 만나보세요.",
+    "shotsHead": "스크린샷",
+    "infoHead": "출시 정보",
+    "info": [
+      {
+        "k": "장르",
+        "v": "학원 일상 미스터리 · 추리 어드벤처"
+      },
+      {
+        "k": "플랫폼",
+        "v": "Android / iOS / PC (Steam)"
+      },
+      {
+        "k": "출시 예정",
+        "v": "모바일 2026년 10월 · Steam 2027년 상반기"
+      },
+      {
+        "k": "이용 방식",
+        "v": "무료 다운로드 · 유료 챕터 포함"
+      },
+      {
+        "k": "지원 언어",
+        "v": "한국어 · 일본어 · 영어"
+      },
+      {
+        "k": "전시 참가",
+        "v": "버닝비버 2024 · 비트서밋 2025, 2026 · BIC 2025 · 타이베이 게임쇼 2026 · 도쿄게임쇼 2026"
+      }
+    ],
+    "noticeHead": "기존 제목 안내",
+    "notice": "모바일 출시를 앞두고 게임 제목을 《502호실》에서 《물고기는 날지 않는다》로 변경했습니다. 현재 Steam에서는 기존 제목인 《502호》로 표기되어 있습니다.",
+    "closing": "물고기는 날지 않는다. 그렇게 믿었던 소녀의 이야기가 시작됩니다.",
+    "siteLink": "플레이고게임즈의 다른 게임 보기",
+    "regionNote": "사전예약은 현재 일본 구글플레이 스토어에서만 진행 중입니다."
+  },
+  "ja": {
+    "lang": "日本語",
+    "title": "魚は飛ばない",
+    "titleSub": "Where Fish Fly · 물고기는 날지 않는다",
+    "tagline": "日常の小さな謎を解く。",
+    "genre": "学園日常ミステリー · 推理アドベンチャー",
+    "releaseLabel": "配信予定",
+    "releaseDate": "モバイル 2026年10月",
+    "quote": "「私の人生に特別なことなんて絶対起こらない。現実なんて、驚くほど退屈なものだから。」",
+    "ctaHead": "事前登録受付中",
+    "ctaNote": [
+      "事前登録は無料です。",
+      "配信開始をいち早くお知らせします。"
+    ],
+    "pregegAlt": "Google Play 事前登録",
+    "steamCta": "Steamでウィッシュリストに追加",
+    "steamNote": "Steam版は旧タイトル『502号室』で登録されています。",
+    "storyHead": "ゲーム紹介",
+    "story": [
+      "幻想なんて信じていない冷めた高校生の主人公が、平凡で穏やかな毎日を夢見て寄宿制高校に入学する。しかし新学期に馴染む間もなく、奇妙な噂の数々が耳に入ってくる。ファンタジーのような話に主人公は呆れ顔。けれど寮502号室のルームメイトたちの瞳は、期待で輝いていた。",
+      "世の中がそんなに面白いはずがない。それを証明するために、主人公は自ら謎の真相を明かすことにする。好奇心いっぱいのルームメイトたちも、鋭い相棒として力を貸してくれる。ある者は大したことではないと証明するために、ある者は何があったのか知りたくて。別々の理由で集まった4人の推理が始まる。",
+      "校内の小さな謎の裏には、受験のプレッシャー、比較と劣等感、進路の悩みなど、韓国の高校生が向き合う現実が隠れている。エピソード形式で続く事件をひとつずつ解きながら、主人公は退屈で当たり前だと思っていた日常に、思いがけない意味を見つけていく。"
+    ],
+    "featuresHead": "こんなゲームです",
+    "features": [
+      {
+        "i": "🔍",
+        "t": "人が死なないコージーミステリー",
+        "d": "事件現場も犯人もいません。舞台は教室と寮、手がかりは何気ない会話と小さな違和感。血なまぐさい事件ではなく、日常の中の謎を扱うミステリーです。"
+      },
+      {
+        "i": "🧠",
+        "t": "あなたが探偵役",
+        "d": "集めた手がかりを組み合わせて仮説を立てる。証拠で裏付けが取れた仮説は、推理へと育っていく。推理が進むほど画面の上で答えが少しずつ近づいてくるから、もうすぐ解けるという手ごたえとともに結論へ迫れます。"
+      },
+      {
+        "i": "🌙",
+        "t": "昼は調査、夜は推理",
+        "d": "昼は校内を歩き回り、聞き込みと観察で手がかりを集めよう。夜は寮の部屋に集まって、ルームメイトたちと推理タイム。"
+      },
+      {
+        "i": "👭",
+        "t": "502号室の4人",
+        "d": "性格も関心もバラバラな4人が、それぞれの視点でひとつの謎を解いていきます。"
+      }
+    ],
+    "playHead": "プレイ",
+    "play": [
+      {
+        "when": "昼",
+        "t": "調査",
+        "d": "校内を歩き回り、聞き込みと観察で手がかりを集めます。誰かが何気なく口にした言葉、ささやかな痕跡、見過ごすには不自然な光景まで。主人公が見て、聞いて、感じたすべてが謎を解く手がかりになります。"
+      },
+      {
+        "when": "夜",
+        "t": "推理",
+        "d": "寮の502号室に集まり、ルームメイトたちと手がかりをつなげます。集めた情報をもとに仮説を立て、証拠で確かめながら事件の全貌に迫ります。"
+      }
+    ],
+    "flow": [
+      "手がかり収集",
+      "仮説を立てる",
+      "仮説を検証",
+      "結論"
+    ],
+    "flowNote": "読むだけでは終わりません。仮説を立て、証拠で確かめる過程そのものがプレイです。",
+    "meaningHead": "タイトルに込めた意味",
+    "meaning": [
+      "主人公にとって世界は、この一文のように当たり前で退屈な場所です。幻想のようなことは起こらないし、どんなに奇妙な噂にも結局はつまらない理由があるはずだと信じています。",
+      "けれど寮502号室のルームメイトたちと謎を解いていくうちに、主人公はあまりにも簡単に見過ごしてきたものと向き合うことになります。些細な言葉に込められた悩みに気づき、理解できなかった行動にもそれなりの事情があったことを知る。よく知っていると思っていた友達の、知らない一面を見つけることもあります。",
+      "奇妙な出来事に現実的な理由があるからといって、その中にある物語まで退屈なわけではありません。『魚は飛ばない』は、退屈だと決めつけていた日常が、誰かを知るほどに少しずつ気になっていく物語です。"
+    ],
+    "meaningPull": "魚は飛ばない。",
+    "recommendHead": "こんな人におすすめ",
+    "recommend": [
+      "人が死なない「日常の謎」ミステリーが好きな人",
+      "青春もの・学園ものの静かな空気が好きな人",
+      "読むだけでなく、自分の頭で推理したい人"
+    ],
+    "recommendNote": "『氷菓』のように、日常の謎と登場人物の関係を一緒に楽しむ青春ミステリーがお好きなら、寮502号室の物語をのぞいてみてください。",
+    "shotsHead": "スクリーンショット",
+    "infoHead": "作品情報",
+    "info": [
+      {
+        "k": "ジャンル",
+        "v": "学園日常ミステリー · 推理アドベンチャー"
+      },
+      {
+        "k": "対応機種",
+        "v": "Android / iOS / PC (Steam)"
+      },
+      {
+        "k": "配信予定",
+        "v": "モバイル 2026年10月 · Steam 2027年上半期"
+      },
+      {
+        "k": "価格",
+        "v": "基本プレイ無料（有料チャプターあり）"
+      },
+      {
+        "k": "対応言語",
+        "v": "日本語 · 英語 · 韓国語"
+      },
+      {
+        "k": "出展",
+        "v": "BURNING BEAVER 2024 · BitSummit 2025, 2026 · BIC 2025 · 台北ゲームショウ 2026 · 東京ゲームショウ 2026"
+      }
+    ],
+    "noticeHead": "旧タイトルについて",
+    "notice": "モバイル配信にあわせて、タイトルを『502号室』から『魚は飛ばない』に変更しました。Steamでは現在も旧タイトル『502号室』で表記されています。",
+    "closing": "魚は飛ばない。そう信じていた少女の物語が、始まる。",
+    "siteLink": "PLAYGO GAMES の他のゲームを見る",
+    "regionNote": ""
+  },
+  "en": {
+    "lang": "English",
+    "title": "Where Fish Fly",
+    "titleSub": "魚は飛ばない · 물고기는 날지 않는다",
+    "tagline": "Unravel the small mysteries of everyday life.",
+    "genre": "School slice-of-life mystery · Deduction adventure",
+    "releaseLabel": "Coming",
+    "releaseDate": "Mobile — October 2026",
+    "quote": "“Nothing special will ever happen in my life. Reality is painfully predictable.”",
+    "ctaHead": "Pre-register now",
+    "ctaNote": [
+      "Pre-registration is free.",
+      "We'll let you know the moment it launches."
+    ],
+    "pregegAlt": "Pre-register on Google Play",
+    "steamCta": "Wishlist on Steam",
+    "steamNote": "The Steam version is still listed under its former title, Room 502.",
+    "storyHead": "About the game",
+    "story": [
+      "A cynical high school girl who never bought into fantasy enrolls in a quiet boarding school, hoping for a calm, ordinary life. But before she can even settle in, strange rumors begin to reach her. She scoffs at every story, while her roommates in Room 502 watch with sparkling eyes.",
+      "The world can't possibly be that interesting. Determined to prove it, she sets out to uncover the truth herself — and her endlessly curious roommates turn out to be sharp partners. One wants to prove it's nothing; another simply wants to know what happened. Four girls, four reasons, one investigation.",
+      "Behind each small campus riddle sits something real: exam pressure, comparison and self-doubt, the weight of deciding a future. As the episodes unfold, she keeps finding unexpected meaning in the ordinary days she had written off as dull."
+    ],
+    "featuresHead": "What you'll do",
+    "features": [
+      {
+        "i": "🔍",
+        "t": "A cozy mystery where no one dies",
+        "d": "No crime scenes, no culprits. The stage is a classroom and a dorm, and the clues are passing remarks and small oddities. This is a mystery about the riddles hidden in everyday life."
+      },
+      {
+        "i": "🧠",
+        "t": "You are the detective",
+        "d": "Combine the clues you gather to form a hypothesis. Back it up with evidence, and it grows into a deduction. As your reasoning progresses, you can see the answer drawing closer on screen, so you always feel that satisfying sense of getting there."
+      },
+      {
+        "i": "🌙",
+        "t": "Gather by day, deduce by night",
+        "d": "Explore the campus, talk to students, and observe carefully during the day. At night, gather in the dorm room for deduction time with your roommates."
+      },
+      {
+        "i": "👭",
+        "t": "The four of Room 502",
+        "d": "Four girls with very different personalities and interests untangle each mystery from their own angles."
+      }
+    ],
+    "playHead": "How it plays",
+    "play": [
+      {
+        "when": "Day",
+        "t": "Investigate",
+        "d": "Walk the campus, ask around, and watch closely. An offhand remark, a small trace, a scene too odd to ignore — everything she sees, hears and feels can become the clue that cracks the case."
+      },
+      {
+        "when": "Night",
+        "t": "Deduce",
+        "d": "Gather in Room 502 and connect the clues with your roommates. Build a hypothesis from what you've collected, confirm it against the evidence, and close in on the whole story."
+      }
+    ],
+    "flow": [
+      "Gather clues",
+      "Form a hypothesis",
+      "Test it",
+      "Conclude"
+    ],
+    "flowNote": "You don't just read along. Building a hypothesis and checking it against evidence is the game.",
+    "meaningHead": "About the title",
+    "meaning": [
+      "To her, the world is exactly as obvious as that sentence. Nothing fantastical happens, and however strange a rumor sounds, there will always be a dull explanation underneath.",
+      "But as she works through the riddles with her roommates in Room 502, she starts facing the things she had brushed past. She notices the worry tucked inside a throwaway line, learns that behavior she couldn't understand had its own reasons, and finds an unfamiliar side to a friend she thought she knew.",
+      "A strange event having an ordinary explanation doesn't make the story inside it ordinary. Where Fish Fly is about an everyday life she had dismissed as predictable — and how it grows more curious the more she comes to know the people in it."
+    ],
+    "meaningPull": "Fish don't fly.",
+    "recommendHead": "Recommended for you if",
+    "recommend": [
+      "You enjoy everyday mysteries with no crime scenes or culprits",
+      "You love the quiet atmosphere of slice-of-life school stories",
+      "You want to deduce with your own head, not just read along"
+    ],
+    "recommendNote": "If you like youth mysteries where the riddles and the relationships matter equally — think Hyouka — come meet the girls of Room 502.",
+    "shotsHead": "Screenshots",
+    "infoHead": "Game info",
+    "info": [
+      {
+        "k": "Genre",
+        "v": "School slice-of-life mystery · Deduction adventure"
+      },
+      {
+        "k": "Platforms",
+        "v": "Android / iOS / PC (Steam)"
+      },
+      {
+        "k": "Release",
+        "v": "Mobile October 2026 · Steam H1 2027"
+      },
+      {
+        "k": "Price",
+        "v": "Free to download, with paid chapters"
+      },
+      {
+        "k": "Languages",
+        "v": "English · Japanese · Korean"
+      },
+      {
+        "k": "Shown at",
+        "v": "Burning Beaver 2024 · BitSummit 2025, 2026 · BIC 2025 · Taipei Game Show 2026 · Tokyo Game Show 2026"
+      }
+    ],
+    "noticeHead": "A note on the title",
+    "notice": "Ahead of the mobile release the game was renamed from Room 502 to Where Fish Fly. The Steam page is still listed under the former title, Room 502.",
+    "closing": "Fish don't fly. So she believed. Her story begins here.",
+    "siteLink": "See more games by PLAYGO GAMES",
+    "regionNote": "Pre-registration is currently available on the Japanese Google Play store only."
+  }
+}
