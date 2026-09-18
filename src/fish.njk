@@ -178,6 +178,20 @@ eleventyExcludeFromCollections: true
     </div>
   </section>
 
+  <section class="fs-sec">
+    <div class="fs-wrap">
+      <h2>{{ t.widgetHead }}</h2>
+      {# 스팀 공식 위젯. 미출시 타이틀이라 'Wishlist on Steam' 버튼으로 나옵니다. 고정 폭 646px 을 화면 폭에 맞춰 축소합니다. #}
+      <div class="fs-widget" data-widget>
+        <iframe class="fs-widget-frame"
+                src="https://store.steampowered.com/widget/{{ p.steamAppId }}/?utm_source=playgogames&utm_campaign=fish"
+                title="{{ t.widgetHead }}" width="646" height="190"
+                frameborder="0" loading="lazy"></iframe>
+      </div>
+      <p class="fs-widget-note">{{ t.widgetNote }}</p>
+    </div>
+  </section>
+
   <section class="fs-closing">
     <div class="fs-wrap"><p>{{ t.closing }}</p></div>
   </section>
@@ -213,6 +227,19 @@ eleventyExcludeFromCollections: true
   var LANGS = ["ja", "en", "ko"];
   var STEAM = { ja: {{ p.ja.steamCta | dump | safe }}, en: {{ p.en.steamCta | dump | safe }}, ko: {{ p.ko.steamCta | dump | safe }} };
 
+  /* 스팀 위젯은 폭이 646px 로 고정이라 화면에 맞춰 축소합니다 */
+  var WIDGET_W = 646, WIDGET_H = 190;
+  function fitWidgets() {
+    document.querySelectorAll("[data-widget]").forEach(function (box) {
+      if (!box.clientWidth) return;            /* 숨겨진 문서는 건너뜁니다 */
+      var scale = Math.min(1, box.clientWidth / WIDGET_W);
+      var frame = box.querySelector(".fs-widget-frame");
+      if (!frame) return;
+      frame.style.transform = "scale(" + scale + ")";
+      box.style.height = Math.round(WIDGET_H * scale) + "px";
+    });
+  }
+
   function apply(lang) {
     if (LANGS.indexOf(lang) < 0) lang = "ja";
     docs.forEach(function (d) { d.hidden = d.getAttribute("data-doc") !== lang; });
@@ -220,6 +247,7 @@ eleventyExcludeFromCollections: true
     document.documentElement.lang = lang;
     var s = document.querySelector("[data-sticky-steam]");
     if (s) s.textContent = STEAM[lang];
+    fitWidgets();
     try { history.replaceState(null, "", "#" + lang); } catch (e) {}
   }
 
@@ -233,6 +261,8 @@ eleventyExcludeFromCollections: true
   btns.forEach(function (b) {
     b.addEventListener("click", function () { apply(b.getAttribute("data-lang")); });
   });
+
+  window.addEventListener("resize", fitWidgets);
 
   /* 히어로의 CTA가 화면에서 사라지면 하단 고정 버튼을 띄웁니다 */
   var sticky = document.querySelector(".fs-sticky");
