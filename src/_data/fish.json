@@ -132,7 +132,8 @@
     "closing": "물고기는 날지 않는다. 그렇게 믿었던 소녀의 이야기가 시작됩니다.",
     "regionNote": "사전예약은 현재 일본 구글플레이 스토어에서만 진행 중입니다.",
     "widgetHead": "Steam 스토어 위젯",
-    "widgetNote": "Steam에 로그인되어 있으면 여기서 바로 위시리스트에 담을 수 있습니다."
+    "widgetNote": "Steam에 로그인되어 있으면 여기서 바로 위시리스트에 담을 수 있습니다.",
+    "steamBadgeSub": "위시리스트에 담기"
   },
   "ja": {
     "lang": "日本語",
@@ -247,7 +248,8 @@
     "closing": "魚は飛ばない。そう信じていた少女の物語が、始まる。",
     "regionNote": "",
     "widgetHead": "Steam ストアウィジェット",
-    "widgetNote": "Steamにログイン済みなら、このままウィッシュリストに追加できます。"
+    "widgetNote": "Steamにログイン済みなら、このままウィッシュリストに追加できます。",
+    "steamBadgeSub": "ウィッシュリストに追加"
   },
   "en": {
     "lang": "English",
@@ -362,7 +364,8 @@
     "closing": "Fish don't fly. So she believed. Her story begins here.",
     "regionNote": "Pre-registration is currently available on the Japanese Google Play store only.",
     "widgetHead": "Steam store widget",
-    "widgetNote": "If you're signed in to Steam, you can add it to your wishlist right here."
+    "widgetNote": "If you're signed in to Steam, you can add it to your wishlist right here.",
+    "steamBadgeSub": "WISHLIST ON"
   },
   "steamAppId": "3362130",
   "_widgetNote": "스팀 공식 Store Widget (미출시 게임은 'Wishlist on Steam' 버튼으로 표시). utm 파라미터는 Steamworks UTM 분석에서 확인 가능."

@@ -8,9 +8,13 @@ eleventyExcludeFromCollections: true
 <img src="{{ b.byLang[code] if b.byLang[code] else b.default }}" alt="{{ alt }}" width="{{ b.w }}" height="{{ b.h }}">
 {%- endmacro %}
 {% macro steamBtn(t, cls) %}
-<a class="{{ cls }}" href="{{ p.steam }}" target="_blank" rel="noopener">
-  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.98 2C6.66 2 2.3 6.03 1.8 11.2l5.4 2.23a3.03 3.03 0 0 1 1.72-.53h.15l2.4-3.47v-.05a4.04 4.04 0 1 1 4.04 4.04h-.1l-3.42 2.44v.13a3.04 3.04 0 0 1-6.03.53L2.1 14.5A10.02 10.02 0 0 0 11.98 22c5.52 0 10-4.48 10-10s-4.48-10-10-10zm-3.7 15.17l-1.24-.51a2.28 2.28 0 1 0 1.18-3.03l1.28.53a1.68 1.68 0 1 1-1.22 3.01zM18.2 12a2.69 2.69 0 1 0-5.38 0 2.69 2.69 0 0 0 5.38 0zm-4.71 0a2.03 2.03 0 1 1 4.05 0 2.03 2.03 0 0 1-4.05 0z"/></svg>
-  <span>{{ t.steamCta }}</span>
+{# 구글플레이 사전예약 배지와 같은 형태(검정 사각형·두 줄 구성)로 맞춘 스팀 배지입니다 #}
+<a class="{{ cls }}" href="{{ p.steam }}" target="_blank" rel="noopener" aria-label="{{ t.steamCta }}">
+  <svg class="fs-steam-logo" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.98 2C6.66 2 2.3 6.03 1.8 11.2l5.4 2.23a3.03 3.03 0 0 1 1.72-.53h.15l2.4-3.47v-.05a4.04 4.04 0 1 1 4.04 4.04h-.1l-3.42 2.44v.13a3.04 3.04 0 0 1-6.03.53L2.1 14.5A10.02 10.02 0 0 0 11.98 22c5.52 0 10-4.48 10-10s-4.48-10-10-10zm-3.7 15.17l-1.24-.51a2.28 2.28 0 1 0 1.18-3.03l1.28.53a1.68 1.68 0 1 1-1.22 3.01zM18.2 12a2.69 2.69 0 1 0-5.38 0 2.69 2.69 0 0 0 5.38 0zm-4.71 0a2.03 2.03 0 1 1 4.05 0 2.03 2.03 0 0 1-4.05 0z"/></svg>
+  <span class="fs-steam-text">
+    <span class="fs-steam-sub">{{ t.steamBadgeSub }}</span>
+    <span class="fs-steam-main">Steam</span>
+  </span>
 </a>
 {% endmacro %}
 <!doctype html>
@@ -82,8 +86,8 @@ eleventyExcludeFromCollections: true
           {{ badge("appstore", code, "App Store") }}
         </a>
         {% endif %}
+        {{ steamBtn(t, "fs-steam") }}
       </div>
-      {{ steamBtn(t, "fs-steam") }}
       <p class="fs-cta-note">
         {% for line in t.ctaNote %}{{ line }}{% if not loop.last %}<br>{% endif %}{% endfor %}
         {% if t.regionNote %}<br><span class="fs-region-note">{{ t.regionNote }}</span>{% endif %}
@@ -214,10 +218,7 @@ eleventyExcludeFromCollections: true
          width="{{ p.badges.googleplay.w }}" height="{{ p.badges.googleplay.h }}">
   </a>
   {% endif %}
-  <a class="fs-sticky-steam" href="{{ p.steam }}" target="_blank" rel="noopener">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.98 2C6.66 2 2.3 6.03 1.8 11.2l5.4 2.23a3.03 3.03 0 0 1 1.72-.53h.15l2.4-3.47v-.05a4.04 4.04 0 1 1 4.04 4.04h-.1l-3.42 2.44v.13a3.04 3.04 0 0 1-6.03.53L2.1 14.5A10.02 10.02 0 0 0 11.98 22c5.52 0 10-4.48 10-10s-4.48-10-10-10zm-3.7 15.17l-1.24-.51a2.28 2.28 0 1 0 1.18-3.03l1.28.53a1.68 1.68 0 1 1-1.22 3.01zM18.2 12a2.69 2.69 0 1 0-5.38 0 2.69 2.69 0 0 0 5.38 0zm-4.71 0a2.03 2.03 0 1 1 4.05 0 2.03 2.03 0 0 1-4.05 0z"/></svg>
-    <span data-sticky-steam>Steam</span>
-  </a>
+  {{ steamBtn(p.ja, "fs-sticky-steam") }}
 </div>
 
 <script>
@@ -225,7 +226,11 @@ eleventyExcludeFromCollections: true
   var docs = document.querySelectorAll("[data-doc]");
   var btns = document.querySelectorAll("[data-lang]");
   var LANGS = ["ja", "en", "ko"];
-  var STEAM = { ja: {{ p.ja.steamCta | dump | safe }}, en: {{ p.en.steamCta | dump | safe }}, ko: {{ p.ko.steamCta | dump | safe }} };
+  var STEAM = {
+    ja: { label: {{ p.ja.steamCta | dump | safe }}, sub: {{ p.ja.steamBadgeSub | dump | safe }} },
+    en: { label: {{ p.en.steamCta | dump | safe }}, sub: {{ p.en.steamBadgeSub | dump | safe }} },
+    ko: { label: {{ p.ko.steamCta | dump | safe }}, sub: {{ p.ko.steamBadgeSub | dump | safe }} }
+  };
 
   /* 스팀 위젯은 폭이 646px 로 고정이라 화면에 맞춰 축소합니다 */
   var WIDGET_W = 646, WIDGET_H = 190;
@@ -245,8 +250,13 @@ eleventyExcludeFromCollections: true
     docs.forEach(function (d) { d.hidden = d.getAttribute("data-doc") !== lang; });
     btns.forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-lang") === lang)); });
     document.documentElement.lang = lang;
-    var s = document.querySelector("[data-sticky-steam]");
-    if (s) s.textContent = STEAM[lang];
+    /* 하단 고정 바의 스팀 배지도 같은 언어로 맞춥니다 */
+    var sticky = document.querySelector(".fs-sticky-steam");
+    if (sticky) {
+      sticky.setAttribute("aria-label", STEAM[lang].label);
+      var sub = sticky.querySelector(".fs-steam-sub");
+      if (sub) sub.textContent = STEAM[lang].sub;
+    }
     fitWidgets();
     try { history.replaceState(null, "", "#" + lang); } catch (e) {}
   }
@@ -265,14 +275,14 @@ eleventyExcludeFromCollections: true
   window.addEventListener("resize", fitWidgets);
 
   /* 히어로의 CTA가 화면에서 사라지면 하단 고정 버튼을 띄웁니다 */
-  var sticky = document.querySelector(".fs-sticky");
-  if (sticky && "IntersectionObserver" in window) {
+  var stickyBar = document.querySelector(".fs-sticky");
+  if (stickyBar && "IntersectionObserver" in window) {
     var io = new IntersectionObserver(function (entries) {
       var anyVisible = entries.some(function (e) {
         var doc = e.target.closest("[data-doc]");
         return e.isIntersecting && doc && !doc.hidden;
       });
-      sticky.hidden = anyVisible;
+      stickyBar.hidden = anyVisible;
     }, { rootMargin: "-72px 0px 0px 0px" });
     document.querySelectorAll(".fs-cta").forEach(function (el) { io.observe(el); });
   }

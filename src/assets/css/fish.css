@@ -119,16 +119,36 @@ h1, h2, h3, p, dl, dd, ol, ul { margin: 0; }
 .fs-store img { height: 58px; width: auto; }
 a.fs-store:active { transform: scale(.96); }
 
-.fs-steam {
-  display: inline-flex; align-items: center; justify-content: center; gap: 9px;
-  margin-top: 16px; padding: 14px 24px; border-radius: 999px;
-  background: var(--night); color: #fff;
-  font-size: 14.5px; font-weight: 700; line-height: 1;
-  box-shadow: var(--shadow-sm);
-  transition: transform .18s var(--ease), box-shadow .18s var(--ease);
+/* 구글플레이 배지(565x168, 검정 바탕 · 회색 1px 테두리 · 모서리 반경 약 16/168)와
+   같은 비율·같은 색으로 맞춘 스팀 배지. 높이만 바꾸면 나머지는 따라옵니다.
+   구글 마크는 배지 높이의 64.3%(168px 중 108px)라 스팀 마크도 같은 값을 씁니다. */
+.fs-steam, .fs-sticky-steam {
+  --badge-h: 58px;
+  box-sizing: border-box;
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: calc(var(--badge-h) * .10);
+  width: calc(var(--badge-h) * 565 / 168);      /* 구글 배지와 같은 가로세로비 */
+  height: var(--badge-h);
+  padding: 0 calc(var(--badge-h) * .13);
+  background: #000; color: #fff;
+  border: 1px solid #a6a6a6;
+  border-radius: calc(var(--badge-h) * 16 / 168);
+  transition: transform .18s var(--ease);
 }
-.fs-steam svg { width: 19px; height: 19px; fill: currentColor; flex: 0 0 auto; }
-.fs-steam:active { transform: scale(.97); }
+.fs-steam-logo {
+  width: calc(var(--badge-h) * .643); height: calc(var(--badge-h) * .643);
+  fill: currentColor; flex: 0 0 auto;
+}
+.fs-steam-text { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; min-width: 0; }
+.fs-steam-sub {
+  font-size: calc(var(--badge-h) * .155); font-weight: 500; line-height: 1.25;
+  letter-spacing: .01em; white-space: nowrap;
+}
+.fs-steam-main {
+  font-size: calc(var(--badge-h) * .31); font-weight: 600; line-height: 1.15;
+  letter-spacing: -.01em;
+}
+.fs-steam:active, .fs-sticky-steam:active { transform: scale(.97); }
 
 .fs-cta-note { margin-top: 20px; font-size: 13px; line-height: 1.75; color: var(--muted); }
 .fs-steam-note { display: inline-block; margin-top: 6px; font-size: 12px; color: #9aa8b3; }
@@ -293,14 +313,8 @@ a.fs-store:active { transform: scale(.96); }
 }
 .fs-sticky[hidden] { display: none; }
 .fs-sticky-btn img { height: clamp(40px, 12vw, 50px); width: auto; }
-.fs-sticky-btn:active, .fs-sticky-steam:active { transform: scale(.96); }
-.fs-sticky-steam {
-  display: inline-flex; align-items: center; gap: 8px;
-  padding: 13px 20px; border-radius: 999px;
-  background: var(--night); color: #fff;
-  font-size: 13.5px; font-weight: 700; line-height: 1; white-space: nowrap;
-}
-.fs-sticky-steam svg { width: 18px; height: 18px; fill: currentColor; flex: 0 0 auto; }
+.fs-sticky-btn:active { transform: scale(.96); }
+.fs-sticky-steam { --badge-h: clamp(40px, 12vw, 50px); }
 @keyframes fsUp { from { transform: translateY(100%) } to { transform: none } }
 
 /* ---------- 데스크톱 ---------- */
@@ -314,6 +328,7 @@ a.fs-store:active { transform: scale(.96); }
   .fs-shots figure { width: 340px; }
   .fs-stores { flex-direction: row; justify-content: center; align-items: center; gap: 16px; }
   .fs-store img { height: 54px; }
+  .fs-steam { --badge-h: 54px; }
   .fs-play { grid-template-columns: 1fr 1fr; }
   /* 마우스 환경에서는 하단 고정 버튼이 불필요 */
   .fs-sticky { display: none; }
@@ -322,7 +337,7 @@ a.fs-store:active { transform: scale(.96); }
 
 @media (hover: hover) {
   a.fs-store:hover { transform: translateY(-3px); }
-  .fs-steam:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+  .fs-steam:hover { transform: translateY(-3px); }
   .fs-foot-link:hover { text-decoration: underline; text-underline-offset: 3px; }
 }
 
