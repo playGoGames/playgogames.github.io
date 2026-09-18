@@ -130,7 +130,6 @@
     "noticeHead": "기존 제목 안내",
     "notice": "모바일 출시를 앞두고 게임 제목을 《502호실》에서 《물고기는 날지 않는다》로 변경했습니다. 현재 Steam에서는 기존 제목인 《502호》로 표기되어 있습니다.",
     "closing": "물고기는 날지 않는다. 그렇게 믿었던 소녀의 이야기가 시작됩니다.",
-    "siteLink": "플레이고게임즈의 다른 게임 보기",
     "regionNote": "사전예약은 현재 일본 구글플레이 스토어에서만 진행 중입니다."
   },
   "ja": {
@@ -244,7 +243,6 @@
     "noticeHead": "旧タイトルについて",
     "notice": "モバイル配信にあわせて、タイトルを『502号室』から『魚は飛ばない』に変更しました。Steamでは現在も旧タイトル『502号室』で表記されています。",
     "closing": "魚は飛ばない。そう信じていた少女の物語が、始まる。",
-    "siteLink": "PLAYGO GAMES の他のゲームを見る",
     "regionNote": ""
   },
   "en": {
@@ -358,7 +356,6 @@
     "noticeHead": "A note on the title",
     "notice": "Ahead of the mobile release the game was renamed from Room 502 to Where Fish Fly. The Steam page is still listed under the former title, Room 502.",
     "closing": "Fish don't fly. So she believed. Her story begins here.",
-    "siteLink": "See more games by PLAYGO GAMES",
     "regionNote": "Pre-registration is currently available on the Japanese Google Play store only."
   }
 }
