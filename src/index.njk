@@ -2,7 +2,7 @@
 layout: base.njk
 permalink: /
 bodyClass: home
-description: "짧은 순간에도 즐거움이 남는 게임. 플레이고게임즈는 고양이 수박게임, 버섯버섯버섯, 트리플 타일 마스터를 만든 캐주얼 게임 개발사입니다."
+description: "짧은 순간에도 즐거움이 남는 게임. 플레이고게임즈는 물고기는 날지 않는다, 고양이 수박게임, 버섯버섯버섯, 트리플 타일 마스터를 만드는 게임 개발사입니다."
 ---
 {% from "partials/icons.njk" import storeButtons %}
 
@@ -19,6 +19,7 @@ description: "짧은 순간에도 즐거움이 남는 게임. 플레이고게임
         <button class="icon-btn" type="button" data-open="dlg-{{ g.slug }}" aria-haspopup="dialog">
           <span class="icon-img">
             <img src="{{ g.icon }}" alt="" width="512" height="512"{% if not loop.first %} loading="lazy"{% endif %}>
+            {% if g.flag %}<span class="icon-flag">{{ g.flag }}</span>{% endif %}
           </span>
           <span class="icon-name">{{ g.title }}</span>
         </button>
@@ -45,7 +46,9 @@ description: "짧은 순간에도 즐거움이 남는 게임. 플레이고게임
       <p class="modal-en">{{ g.titleEn }}</p>
       <p class="modal-tagline">{{ g.tagline }}</p>
       <p class="modal-desc">{% for line in g.desc %}{% if not loop.first %}<br>{% endif %}{{ line }}{% endfor %}</p>
+      {% if g.badge %}<p class="modal-badge">{{ g.badge }}</p>{% endif %}
       {{ storeButtons(g.stores) }}
+      {% if g.page %}<a class="modal-page" href="{{ g.page }}">{{ g.pageLabel or "자세히 보기" }} →</a>{% endif %}
     </div>
   </div>
 </div>

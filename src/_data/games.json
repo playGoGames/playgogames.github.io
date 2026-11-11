@@ -1,5 +1,22 @@
 [
   {
+    "slug": "wherefishfly",
+    "title": "물고기는 날지 않는다",
+    "titleEn": "Where Fish Fly",
+    "tagline": "일상의 작은 수수께끼를 풀다.",
+    "desc": [
+      "환상을 믿지 않는 고등학생이 기숙사 502호 룸메이트들과 학교의 기묘한 소문을 파헤칩니다.",
+      "낮에는 탐문하고 밤에는 추리하는, 사람이 죽지 않는 학원 일상 미스터리 어드벤처입니다."
+    ],
+    "art": "/assets/images/games/fish/keyart.webp",
+    "icon": "/assets/images/games/fish/icon.webp",
+    "flag": "사전예약",
+    "badge": "모바일 2026년 10월 출시 예정 · 사전예약 진행 중",
+    "page": "/fish/",
+    "pageLabel": "게임 소개 · 사전예약",
+    "stores": {}
+  },
+  {
     "slug": "catwatermelon",
     "title": "고양이 수박게임",
     "titleEn": "Cat Watermelon",
