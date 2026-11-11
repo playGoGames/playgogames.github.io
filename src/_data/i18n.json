@@ -1,0 +1,35 @@
+{
+  "ko": {
+    "key": "ko",
+    "lang": "ko",
+    "label": "한국어",
+    "permalink": "/",
+    "metaTitle": "플레이고게임즈 · PLAYGO GAMES",
+    "metaDesc": "짧은 순간에도 즐거움이 남는 게임. 플레이고게임즈는 물고기는 날지 않는다, 고양이 수박게임, 버섯버섯버섯, 트리플 타일 마스터를 만드는 게임 개발사입니다.",
+    "lead": "짧은 순간에도 즐거움이 남는 게임",
+    "close": "닫기",
+    "homeAria": "플레이고게임즈 홈"
+  },
+  "ja": {
+    "key": "ja",
+    "lang": "ja",
+    "label": "日本語",
+    "permalink": "/ja/",
+    "metaTitle": "PLAYGO GAMES（プレイゴーゲームズ）",
+    "metaDesc": "短い時間でも楽しさが残るゲーム。PLAYGO GAMES は『魚は飛ばない』『ねこスイカゲーム』『きのこきのこきのこ』『トリプルタイルマスター』をつくるゲームスタジオです。",
+    "lead": "短い時間でも、楽しさが残るゲーム",
+    "close": "閉じる",
+    "homeAria": "PLAYGO GAMES ホーム"
+  },
+  "en": {
+    "key": "en",
+    "lang": "en",
+    "label": "EN",
+    "permalink": "/en/",
+    "metaTitle": "PLAYGO GAMES",
+    "metaDesc": "Games that leave something behind, even in a short moment. PLAYGO GAMES makes Where Fish Fly, Cat Watermelon, Triple Mushroom and Triple Tile Master.",
+    "lead": "Games that leave something behind, even in a short moment",
+    "close": "Close",
+    "homeAria": "PLAYGO GAMES home"
+  }
+}

@@ -1,8 +1,13 @@
 ---
+pagination:
+  data: i18n
+  size: 1
+  alias: t
+  resolve: values
 layout: base.njk
-permalink: /
+permalink: "{{ t.permalink }}"
 bodyClass: home
-description: "짧은 순간에도 즐거움이 남는 게임. 플레이고게임즈는 물고기는 날지 않는다, 고양이 수박게임, 버섯버섯버섯, 트리플 타일 마스터를 만드는 게임 개발사입니다."
+eleventyExcludeFromCollections: true
 ---
 {% from "partials/icons.njk" import storeButtons %}
 
@@ -11,17 +16,18 @@ description: "짧은 순간에도 즐거움이 남는 게임. 플레이고게임
     <h1 class="brand">
       <img src="/assets/images/common/logo.png" alt="PLAYGO GAMES" width="1200" height="300">
     </h1>
-    <p class="stage-lead">짧은 순간에도 즐거움이 남는 게임</p>
+    <p class="stage-lead">{{ t.lead }}</p>
 
     <ul class="icon-grid">
       {% for g in games %}
+      {% set gt = g.i18n[t.key] %}
       <li>
         <button class="icon-btn" type="button" data-open="dlg-{{ g.slug }}" aria-haspopup="dialog">
           <span class="icon-img">
             <img src="{{ g.icon }}" alt="" width="512" height="512"{% if not loop.first %} loading="lazy"{% endif %}>
-            {% if g.flag %}<span class="icon-flag">{{ g.flag }}</span>{% endif %}
+            {% if gt.flag %}<span class="icon-flag">{{ gt.flag }}</span>{% endif %}
           </span>
-          <span class="icon-name">{{ g.title }}</span>
+          <span class="icon-name">{{ gt.title }}</span>
         </button>
       </li>
       {% endfor %}
@@ -30,25 +36,26 @@ description: "짧은 순간에도 즐거움이 남는 게임. 플레이고게임
 </section>
 
 {% for g in games %}
+{% set gt = g.i18n[t.key] %}
 <div class="modal" id="dlg-{{ g.slug }}" hidden>
   <div class="modal-backdrop" data-close></div>
   <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="ttl-{{ g.slug }}">
-    <button class="modal-close" type="button" data-close aria-label="닫기">
+    <button class="modal-close" type="button" data-close aria-label="{{ t.close }}">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
     </button>
 
-    <div class="modal-art media" data-label="{{ g.title }}">
-      <img src="{{ g.art }}" alt="{{ g.title }}" width="1024" height="500" loading="lazy">
+    <div class="modal-art media" data-label="{{ gt.title }}">
+      <img src="{{ g.art }}" alt="{{ gt.title }}" width="1024" height="500" loading="lazy">
     </div>
 
     <div class="modal-body">
-      <h2 id="ttl-{{ g.slug }}">{{ g.title }}</h2>
-      <p class="modal-en">{{ g.titleEn }}</p>
-      <p class="modal-tagline">{{ g.tagline }}</p>
-      <p class="modal-desc">{% for line in g.desc %}{% if not loop.first %}<br>{% endif %}{{ line }}{% endfor %}</p>
-      {% if g.badge %}<p class="modal-badge">{{ g.badge }}</p>{% endif %}
+      <h2 id="ttl-{{ g.slug }}">{{ gt.title }}</h2>
+      <p class="modal-en">{{ gt.titleEn }}</p>
+      <p class="modal-tagline">{{ gt.tagline }}</p>
+      <p class="modal-desc">{% for line in gt.desc %}{% if not loop.first %}<br>{% endif %}{{ line }}{% endfor %}</p>
+      {% if gt.badge %}<p class="modal-badge">{{ gt.badge }}</p>{% endif %}
       {{ storeButtons(g.stores) }}
-      {% if g.page %}<a class="modal-page" href="{{ g.page }}">{{ g.pageLabel or "자세히 보기" }} →</a>{% endif %}
+      {% if g.page %}<a class="modal-page" href="{{ g.page }}#{{ t.key }}">{{ gt.pageLabel }} →</a>{% endif %}
     </div>
   </div>
 </div>

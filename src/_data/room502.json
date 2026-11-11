@@ -1,0 +1,213 @@
+{
+  "slug": "room502",
+  "steam": "https://store.steampowered.com/app/3362130",
+  "steamAppId": "3362130",
+  "_note": "PC(Steam)판 《502호》 소개. 모바일판은 /fish/ (물고기는 날지 않는다).",
+
+  "ko": {
+    "lang": "한국어",
+    "title": "502호",
+    "titleSub": "Room 502 · 502号室",
+    "tagline": "일상 미스터리 어드벤처",
+    "genre": "학원 일상 미스터리 · 추리 어드벤처 · PC",
+    "releaseLabel": "Steam 출시 예정",
+    "releaseDate": "2027년 상반기",
+    "quote": "“이 세상에 특별한 건 없다. 영화가 아니니까. 차갑고 혹독한 현실이니까.”",
+
+    "ctaHead": "Steam 위시리스트",
+    "ctaNote": ["위시리스트에 담아두시면", "출시될 때 Steam이 알려드립니다."],
+    "steamCta": "Steam 위시리스트에 담기",
+    "steamBadgeSub": "위시리스트에 담기",
+
+    "storyHead": "게임 소개",
+    "story": [
+      "《502호》는 한국의 고등학교를 배경으로 한 일상 미스터리 인터랙티브 픽션입니다. 플레이어는 명서고등학교 신입생 ‘해은’이 되어, 기숙사 502호 룸메이트 세 명과 함께 학교에서 벌어지는 기묘한 사건들을 풀어나갑니다.",
+      "내일도 모레도 오늘과 똑같을 거라고 믿던 해은의 무미건조한 일상에 끼어든 것은 502호 룸메이트들, 그리고 명서고등학교의 기묘한 사건들이었습니다.",
+      "교내의 작은 수수께끼 뒤에는 입시 압박, 비교와 열등감, 진로 고민 등 한국 고등학생들이 마주하는 현실이 숨어 있습니다. 사건을 하나씩 풀어가며, 해은은 시시하다고 여겼던 일상에서 뜻밖의 의미를 발견합니다."
+    ],
+
+    "featuresHead": "이런 게임이에요",
+    "features": [
+      { "i": "🔍", "t": "사람이 죽지 않는 코지 미스터리", "d": "사건 현장도 범인도 없습니다. 무대는 교실과 기숙사, 단서는 무심한 대화와 작은 위화감. 일상 속 수수께끼를 다루는 미스터리입니다." },
+      { "i": "🧠", "t": "당신이 탐정입니다", "d": "모은 단서를 조합해 가설을 세우세요. 증거로 뒷받침된 가설은 추리로 자라납니다. 추리가 진행될수록 화면 위에서 답이 조금씩 가까워집니다." },
+      { "i": "🌙", "t": "낮에는 조사, 밤에는 추리", "d": "낮에는 학교 곳곳을 돌아다니며 탐문하고 관찰하세요. 밤에는 기숙사 502호에 모여 룸메이트들과 추리 타임을 갖습니다." },
+      { "i": "👭", "t": "502호의 네 사람", "d": "성격도 관심사도 다른 네 사람이 각자의 시선으로 하나의 수수께끼를 풀어갑니다." }
+    ],
+
+    "playHead": "플레이",
+    "play": [
+      { "when": "낮", "t": "조사", "d": "학교를 돌아다니며 탐문과 관찰로 단서를 모읍니다. 누군가 무심코 건넨 말, 자그마한 흔적, 그냥 지나치기에는 수상한 광경까지. 보고 듣고 느끼는 모든 것이 사건을 풀어갈 단서가 됩니다." },
+      { "when": "밤", "t": "추리", "d": "기숙사 502호에 모여 룸메이트들과 단서를 연결합니다. 수집한 정보를 바탕으로 가설을 세우고, 증거로 확인하며 사건의 전말에 다가갑니다." }
+    ],
+    "flow": ["단서 수집", "가설 설정", "가설 검증", "결론"],
+    "flowNote": "읽는 데서 그치지 않습니다. 가설을 세우고 증거로 확인하는 과정 자체가 플레이입니다.",
+
+    "shotsHead": "스크린샷",
+
+    "widgetHead": "Steam 스토어",
+    "widgetNote": "Steam에 로그인되어 있으면 여기서 바로 위시리스트에 담을 수 있습니다.",
+
+    "recommendHead": "이런 분께 추천합니다",
+    "recommend": [
+      "시체도 범인도 없는 ‘일상의 수수께끼’ 미스터리가 좋은 분",
+      "청춘물과 학원물의 잔잔한 공기를 좋아하는 분",
+      "읽기만 하는 게 아니라 직접 머리로 추리하고 싶은 분"
+    ],
+    "recommendNote": "소설 『빙과』처럼 일상 속 수수께끼와 인물들의 관계를 함께 즐기는 청춘 미스터리를 좋아하신다면, 기숙사 502호의 이야기를 만나보세요.",
+
+    "infoHead": "작품 정보",
+    "info": [
+      { "k": "타이틀", "v": "502호 (Room 502)" },
+      { "k": "장르", "v": "학원 일상 미스터리 · 추리 어드벤처" },
+      { "k": "플랫폼", "v": "PC (Steam)" },
+      { "k": "출시 예정", "v": "2027년 상반기" },
+      { "k": "지원 언어", "v": "한국어 · 일본어 · 영어 · 중국어 번체" },
+      { "k": "전시 참가", "v": "버닝비버 2024 · 비트서밋 2025, 2026 · BIC 2025 · 타이베이 게임쇼 2026 · 도쿄게임쇼 2026" }
+    ],
+
+    "noticeHead": "모바일판 안내",
+    "notice": "모바일판은 《물고기는 날지 않는다》라는 제목으로 2026년 11월 30일 출시 예정입니다. Steam판은 기존 제목 《502호》 그대로 유지됩니다.",
+    "mobileLink": "모바일판 《물고기는 날지 않는다》 보기",
+
+    "closing": "명서고등학교 기숙사 502호의 이야기가 시작됩니다.",
+    "siteLink": "플레이고게임즈의 다른 게임 보기"
+  },
+
+  "ja": {
+    "lang": "日本語",
+    "title": "502号室",
+    "titleSub": "Room 502 · 502호",
+    "tagline": "寄宿学校青春ミステリー",
+    "genre": "学園日常ミステリー · 推理アドベンチャー · PC",
+    "releaseLabel": "Steam 配信予定",
+    "releaseDate": "2027年上半期",
+    "quote": "「この世に特別なことなんてない。映画じゃないんだから。冷たく厳しい現実なんだから。」",
+
+    "ctaHead": "Steam ウィッシュリスト",
+    "ctaNote": ["ウィッシュリストに入れておくと、", "配信開始時に Steam がお知らせします。"],
+    "steamCta": "Steamでウィッシュリストに追加",
+    "steamBadgeSub": "ウィッシュリストに追加",
+
+    "storyHead": "ゲーム紹介",
+    "story": [
+      "『502号室』は韓国の高校を舞台にした、日常ミステリーのインタラクティブフィクションです。プレイヤーはミョンソ高校の新入生「ハウン」となり、寮502号室のルームメイト3人とともに校内で起きる不可解な出来事を解き明かしていきます。",
+      "明日も明後日も今日と同じだと信じていたハウンの味気ない日常に割り込んできたのは、502号室のルームメイトたち、そしてミョンソ高校の奇妙な出来事でした。",
+      "校内の小さな謎の裏には、受験のプレッシャー、比較と劣等感、進路の悩みなど、韓国の高校生が向き合う現実が隠れています。事件をひとつずつ解きながら、ハウンは退屈だと思っていた日常に思いがけない意味を見つけていきます。"
+    ],
+
+    "featuresHead": "こんなゲームです",
+    "features": [
+      { "i": "🔍", "t": "人が死なないコージーミステリー", "d": "事件現場も犯人もいません。舞台は教室と寮、手がかりは何気ない会話と小さな違和感。日常の中の謎を扱うミステリーです。" },
+      { "i": "🧠", "t": "あなたが探偵役", "d": "集めた手がかりを組み合わせて仮説を立てる。証拠で裏付けが取れた仮説は、推理へと育っていく。推理が進むほど画面の上で答えが少しずつ近づいてきます。" },
+      { "i": "🌙", "t": "昼は調査、夜は推理", "d": "昼は校内を歩き回り、聞き込みと観察で手がかりを集めよう。夜は寮502号室に集まって、ルームメイトたちと推理タイム。" },
+      { "i": "👭", "t": "502号室の4人", "d": "性格も関心もバラバラな4人が、それぞれの視点でひとつの謎を解いていきます。" }
+    ],
+
+    "playHead": "プレイ",
+    "play": [
+      { "when": "昼", "t": "調査", "d": "校内を歩き回り、聞き込みと観察で手がかりを集めます。誰かが何気なく口にした言葉、ささやかな痕跡、見過ごすには不自然な光景まで。見て、聞いて、感じたすべてが謎を解く手がかりになります。" },
+      { "when": "夜", "t": "推理", "d": "寮502号室に集まり、ルームメイトたちと手がかりをつなげます。集めた情報をもとに仮説を立て、証拠で確かめながら事件の全貌に迫ります。" }
+    ],
+    "flow": ["手がかり収集", "仮説を立てる", "仮説を検証", "結論"],
+    "flowNote": "読むだけでは終わりません。仮説を立て、証拠で確かめる過程そのものがプレイです。",
+
+    "shotsHead": "スクリーンショット",
+
+    "widgetHead": "Steam ストア",
+    "widgetNote": "Steamにログイン済みなら、このままウィッシュリストに追加できます。",
+
+    "recommendHead": "こんな人におすすめ",
+    "recommend": [
+      "人が死なない「日常の謎」ミステリーが好きな人",
+      "青春もの・学園ものの静かな空気が好きな人",
+      "読むだけでなく、自分の頭で推理したい人"
+    ],
+    "recommendNote": "『氷菓』のように、日常の謎と登場人物の関係を一緒に楽しむ青春ミステリーがお好きなら、寮502号室の物語をのぞいてみてください。",
+
+    "infoHead": "作品情報",
+    "info": [
+      { "k": "タイトル", "v": "502号室 (Room 502)" },
+      { "k": "ジャンル", "v": "学園日常ミステリー · 推理アドベンチャー" },
+      { "k": "対応機種", "v": "PC (Steam)" },
+      { "k": "配信予定", "v": "2027年上半期" },
+      { "k": "対応言語", "v": "日本語 · 英語 · 韓国語 · 繁体字中国語" },
+      { "k": "出展", "v": "BURNING BEAVER 2024 · BitSummit 2025, 2026 · BIC 2025 · 台北ゲームショウ 2026 · 東京ゲームショウ 2026" }
+    ],
+
+    "noticeHead": "モバイル版について",
+    "notice": "モバイル版は『魚は飛ばない』というタイトルで2026年11月30日に配信予定です。Steam版は旧タイトル『502号室』のまま変わりません。",
+    "mobileLink": "モバイル版『魚は飛ばない』を見る",
+
+    "closing": "ミョンソ高校・寮502号室の物語が、始まる。",
+    "siteLink": "PLAYGO GAMES の他のゲームを見る"
+  },
+
+  "en": {
+    "lang": "English",
+    "title": "Room 502",
+    "titleSub": "502호 · 502号室",
+    "tagline": "A school mystery adventure",
+    "genre": "School slice-of-life mystery · Deduction adventure · PC",
+    "releaseLabel": "Coming to Steam",
+    "releaseDate": "H1 2027",
+    "quote": "“There's no such thing as something special in this world. Because this isn't a movie. It's the cold, harsh reality.”",
+
+    "ctaHead": "Steam wishlist",
+    "ctaNote": ["Add it to your wishlist and", "Steam will tell you the moment it launches."],
+    "steamCta": "Wishlist on Steam",
+    "steamBadgeSub": "WISHLIST ON",
+
+    "storyHead": "About the game",
+    "story": [
+      "Room 502 is an everyday-mystery interactive fiction set in a Korean high school. You play as Hae-eun, a new student at Myeongseo High, and unravel the strange incidents on campus together with the three roommates of dorm Room 502.",
+      "Hae-eun was certain that tomorrow, and the day after, would be exactly like today. What broke into that dry, monotonous life were her roommates in Room 502 — and the mysteries of Myeongseo High.",
+      "Behind each small campus riddle sits something real: exam pressure, comparison and self-doubt, the weight of deciding a future. As the cases unfold, Hae-eun keeps finding unexpected meaning in the ordinary days she had written off as dull."
+    ],
+
+    "featuresHead": "What you'll do",
+    "features": [
+      { "i": "🔍", "t": "A cozy mystery where no one dies", "d": "No crime scenes, no culprits. The stage is a classroom and a dorm, and the clues are passing remarks and small oddities. This is a mystery about the riddles hidden in everyday life." },
+      { "i": "🧠", "t": "You are the detective", "d": "Combine the clues you gather to form a hypothesis. Back it up with evidence, and it grows into a deduction. As your reasoning progresses, you can see the answer drawing closer on screen." },
+      { "i": "🌙", "t": "Gather by day, deduce by night", "d": "Explore the campus, talk to students, and observe carefully during the day. At night, gather in dorm Room 502 for deduction time with your roommates." },
+      { "i": "👭", "t": "The four of Room 502", "d": "Four girls with very different personalities and interests untangle each mystery from their own angles." }
+    ],
+
+    "playHead": "How it plays",
+    "play": [
+      { "when": "Day", "t": "Investigate", "d": "Walk the campus, ask around, and watch closely. An offhand remark, a small trace, a scene too odd to ignore — everything you see, hear and feel can become the clue that cracks the case." },
+      { "when": "Night", "t": "Deduce", "d": "Gather in Room 502 and connect the clues with your roommates. Build a hypothesis from what you've collected, confirm it against the evidence, and close in on the whole story." }
+    ],
+    "flow": ["Gather clues", "Form a hypothesis", "Test it", "Conclude"],
+    "flowNote": "You don't just read along. Building a hypothesis and checking it against evidence is the game.",
+
+    "shotsHead": "Screenshots",
+
+    "widgetHead": "Steam store",
+    "widgetNote": "If you're signed in to Steam, you can add it to your wishlist right here.",
+
+    "recommendHead": "Recommended for you if",
+    "recommend": [
+      "You enjoy everyday mysteries with no crime scenes or culprits",
+      "You love the quiet atmosphere of slice-of-life school stories",
+      "You want to deduce with your own head, not just read along"
+    ],
+    "recommendNote": "If you like youth mysteries where the riddles and the relationships matter equally — think Hyouka — come meet the girls of Room 502.",
+
+    "infoHead": "Game info",
+    "info": [
+      { "k": "Title", "v": "Room 502" },
+      { "k": "Genre", "v": "School slice-of-life mystery · Deduction adventure" },
+      { "k": "Platform", "v": "PC (Steam)" },
+      { "k": "Release", "v": "H1 2027" },
+      { "k": "Languages", "v": "English · Japanese · Korean · Traditional Chinese" },
+      { "k": "Shown at", "v": "Burning Beaver 2024 · BitSummit 2025, 2026 · BIC 2025 · Taipei Game Show 2026 · Tokyo Game Show 2026" }
+    ],
+
+    "noticeHead": "A note on the mobile version",
+    "notice": "The mobile version launches on 30 November 2026 under a different title, Where Fish Fly. The Steam version keeps its original title, Room 502.",
+    "mobileLink": "See the mobile version, Where Fish Fly",
+
+    "closing": "The story of dorm Room 502 at Myeongseo High begins here.",
+    "siteLink": "See more games by PLAYGO GAMES"
+  }
+}

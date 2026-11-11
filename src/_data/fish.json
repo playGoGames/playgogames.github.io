@@ -34,8 +34,6 @@
       "출시되면 가장 먼저 알려드립니다."
     ],
     "pregegAlt": "Google Play 사전등록",
-    "steamCta": "Steam 위시리스트에 담기",
-    "steamNote": "Steam판은 기존 제목 《502호》로 등록되어 있습니다.",
     "storyHead": "게임 소개",
     "story": [
       "환상을 믿지 않는 냉소적인 고등학생 주인공은 평범하고 편안한 삶을 목표로 기숙형 고등학교에 입학합니다. 하지만 새 학기에 적응하기도 전에 기묘한 소문들이 들려옵니다. 언뜻 들으면 판타지 같은 이야기에 주인공은 말도 안 된다며 코웃음치지만, 기숙사 502호 룸메이트들의 눈은 반짝입니다.",
@@ -131,9 +129,7 @@
     "notice": "모바일 출시를 앞두고 게임 제목을 《502호실》에서 《물고기는 날지 않는다》로 변경했습니다. 현재 Steam에서는 기존 제목인 《502호》로 표기되어 있습니다.",
     "closing": "물고기는 날지 않는다. 그렇게 믿었던 소녀의 이야기가 시작됩니다.",
     "regionNote": "사전예약은 현재 일본 구글플레이 스토어에서만 진행 중입니다.",
-    "widgetHead": "Steam 스토어 위젯",
-    "widgetNote": "Steam에 로그인되어 있으면 여기서 바로 위시리스트에 담을 수 있습니다.",
-    "steamBadgeSub": "위시리스트에 담기"
+    "pcLink": "PC(Steam)판 《502호》 보기"
   },
   "ja": {
     "lang": "日本語",
@@ -150,8 +146,6 @@
       "配信開始をいち早くお知らせします。"
     ],
     "pregegAlt": "Google Play 事前登録",
-    "steamCta": "Steamでウィッシュリストに追加",
-    "steamNote": "Steam版は旧タイトル『502号室』で登録されています。",
     "storyHead": "ゲーム紹介",
     "story": [
       "幻想なんて信じていない冷めた高校生の主人公が、平凡で穏やかな毎日を夢見て寄宿制高校に入学する。しかし新学期に馴染む間もなく、奇妙な噂の数々が耳に入ってくる。ファンタジーのような話に主人公は呆れ顔。けれど寮502号室のルームメイトたちの瞳は、期待で輝いていた。",
@@ -247,9 +241,7 @@
     "notice": "モバイル配信にあわせて、タイトルを『502号室』から『魚は飛ばない』に変更しました。Steamでは現在も旧タイトル『502号室』で表記されています。",
     "closing": "魚は飛ばない。そう信じていた少女の物語が、始まる。",
     "regionNote": "",
-    "widgetHead": "Steam ストアウィジェット",
-    "widgetNote": "Steamにログイン済みなら、このままウィッシュリストに追加できます。",
-    "steamBadgeSub": "ウィッシュリストに追加"
+    "pcLink": "PC（Steam）版『502号室』を見る"
   },
   "en": {
     "lang": "English",
@@ -266,8 +258,6 @@
       "We'll let you know the moment it launches."
     ],
     "pregegAlt": "Pre-register on Google Play",
-    "steamCta": "Wishlist on Steam",
-    "steamNote": "The Steam version is still listed under its former title, Room 502.",
     "storyHead": "About the game",
     "story": [
       "A cynical high school girl who never bought into fantasy enrolls in a quiet boarding school, hoping for a calm, ordinary life. But before she can even settle in, strange rumors begin to reach her. She scoffs at every story, while her roommates in Room 502 watch with sparkling eyes.",
@@ -363,10 +353,7 @@
     "notice": "Ahead of the mobile release the game was renamed from Room 502 to Where Fish Fly. The Steam page is still listed under the former title, Room 502.",
     "closing": "Fish don't fly. So she believed. Her story begins here.",
     "regionNote": "Pre-registration is currently available on the Japanese Google Play store only.",
-    "widgetHead": "Steam store widget",
-    "widgetNote": "If you're signed in to Steam, you can add it to your wishlist right here.",
-    "steamBadgeSub": "WISHLIST ON"
+    "pcLink": "See the PC (Steam) version, Room 502"
   },
-  "steamAppId": "3362130",
-  "_widgetNote": "스팀 공식 Store Widget (미출시 게임은 'Wishlist on Steam' 버튼으로 표시). utm 파라미터는 Steamworks UTM 분석에서 확인 가능."
+  "_steamNote": "스팀(502호) 소개는 /room502/ 로 분리했습니다."
 }

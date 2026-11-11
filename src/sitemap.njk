@@ -4,8 +4,18 @@ eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {%- for code, l in i18n %}
   <url>
-    <loc>{{ site.url }}/</loc>
+    <loc>{{ site.url }}{{ l.permalink }}</loc>
+    <lastmod>{{ page.date | isoDate }}</lastmod>
+  </url>
+  {%- endfor %}
+  <url>
+    <loc>{{ site.url }}/fish/</loc>
+    <lastmod>{{ page.date | isoDate }}</lastmod>
+  </url>
+  <url>
+    <loc>{{ site.url }}/room502/</loc>
     <lastmod>{{ page.date | isoDate }}</lastmod>
   </url>
   <url>

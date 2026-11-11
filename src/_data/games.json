@@ -1,69 +1,163 @@
 [
   {
     "slug": "wherefishfly",
-    "title": "물고기는 날지 않는다",
-    "titleEn": "Where Fish Fly",
-    "tagline": "일상의 작은 수수께끼를 풀다.",
-    "desc": [
-      "환상을 믿지 않는 고등학생이 기숙사 502호 룸메이트들과 학교의 기묘한 소문을 파헤칩니다.",
-      "낮에는 탐문하고 밤에는 추리하는, 사람이 죽지 않는 학원 일상 미스터리 어드벤처입니다."
-    ],
     "art": "/assets/images/games/fish/keyart.webp",
     "icon": "/assets/images/games/fish/icon.webp",
-    "flag": "사전예약",
-    "badge": "2026년 11월 30일 출시 예정 · 사전예약 진행 중",
     "page": "/fish/",
-    "pageLabel": "게임 소개 · 사전예약",
     "stores": {
       "appstore": "https://apps.apple.com/app/id6828078404",
       "googleplay": "https://play.google.com/store/apps/details?id=com.playgogames.fish"
+    },
+    "i18n": {
+      "ko": {
+        "title": "물고기는 날지 않는다",
+        "titleEn": "Where Fish Fly",
+        "tagline": "일상의 작은 수수께끼를 풀다.",
+        "desc": [
+          "환상을 믿지 않는 고등학생이 기숙사 502호 룸메이트들과 학교의 기묘한 소문을 파헤칩니다.",
+          "낮에는 탐문하고 밤에는 추리하는, 사람이 죽지 않는 학원 일상 미스터리 어드벤처입니다."
+        ],
+        "flag": "사전예약",
+        "badge": "2026년 11월 30일 출시 예정 · 사전예약 진행 중",
+        "pageLabel": "게임 소개 · 사전예약"
+      },
+      "ja": {
+        "title": "魚は飛ばない",
+        "titleEn": "Where Fish Fly",
+        "tagline": "日常の小さな謎を解く。",
+        "desc": [
+          "幻想を信じない高校生が、寮502号室のルームメイトたちと学校の奇妙な噂を解き明かします。",
+          "昼は調査、夜は推理。人が死なない学園日常ミステリーアドベンチャーです。"
+        ],
+        "flag": "事前登録",
+        "badge": "2026年11月30日 配信予定 · 事前登録受付中",
+        "pageLabel": "ゲーム紹介 · 事前登録"
+      },
+      "en": {
+        "title": "Where Fish Fly",
+        "titleEn": "물고기는 날지 않는다",
+        "tagline": "Unravel the small mysteries of everyday life.",
+        "desc": [
+          "A high schooler who never bought into fantasy digs into the strange rumors on campus with her roommates in Room 502.",
+          "Gather clues by day, deduce by night — a cozy school mystery adventure where no one dies."
+        ],
+        "flag": "Pre-order",
+        "badge": "Coming 30 November 2026 · Pre-registration open",
+        "pageLabel": "About the game · Pre-register"
+      }
     }
   },
   {
     "slug": "catwatermelon",
-    "title": "고양이 수박게임",
-    "titleEn": "Cat Watermelon",
-    "tagline": "같은 고양이끼리 만나면 더 큰 고양이로!",
-    "desc": [
-      "떨어뜨린 고양이가 같은 고양이를 만나면 한 단계 더 큰 고양이가 됩니다.",
-      "어디에 놓을지 고민하는 사이 어느새 시간이 훌쩍 지나가는 합치기 퍼즐입니다."
-    ],
     "art": "/assets/images/games/catwatermelon.webp",
     "icon": "/assets/images/games/catwatermelon-icon.webp",
     "stores": {
       "appstore": "https://apps.apple.com/us/app/id6740145697",
       "googleplay": "https://play.google.com/store/apps/details?id=com.lots.catwatermelon"
+    },
+    "i18n": {
+      "ko": {
+        "title": "고양이 수박게임",
+        "titleEn": "Cat Watermelon",
+        "tagline": "같은 고양이끼리 만나면 더 큰 고양이로!",
+        "desc": [
+          "떨어뜨린 고양이가 같은 고양이를 만나면 한 단계 더 큰 고양이가 됩니다.",
+          "어디에 놓을지 고민하는 사이 어느새 시간이 훌쩍 지나가는 합치기 퍼즐입니다."
+        ]
+      },
+      "ja": {
+        "title": "ねこスイカゲーム",
+        "titleEn": "Cat Watermelon",
+        "tagline": "同じねこ同士がくっつくと、もっと大きなねこに！",
+        "desc": [
+          "落としたねこが同じねこと出会うと、ひとまわり大きなねこになります。",
+          "どこに置こうか考えているうちに、いつの間にか時間が過ぎている合体パズルです。"
+        ]
+      },
+      "en": {
+        "title": "Cat Watermelon",
+        "titleEn": "고양이 수박게임",
+        "tagline": "Two matching cats make one bigger cat!",
+        "desc": [
+          "Drop a cat onto a matching one and it grows into the next size up.",
+          "A merge puzzle where deciding where to place the next cat quietly eats your afternoon."
+        ]
+      }
     }
   },
   {
     "slug": "triplemushroom",
-    "title": "버섯버섯버섯",
-    "titleEn": "Triple Mushroom",
-    "tagline": "귀여운 버섯을 세 개씩 모아 없애는 매치 퍼즐",
-    "desc": [
-      "화면 가득 쌓인 버섯 중에서 같은 모양 세 개를 찾아 없애세요.",
-      "규칙은 단순하지만 한 판만 더 하게 되는, 한 손으로 즐기는 캐주얼 퍼즐입니다."
-    ],
     "art": "/assets/images/games/triplemushroom.webp",
     "icon": "/assets/images/games/triplemushroom-icon.webp",
     "stores": {
       "appstore": "https://apps.apple.com/us/app/id6745580300",
       "googleplay": "https://play.google.com/store/apps/details?id=com.playgogames.triplemushroom"
+    },
+    "i18n": {
+      "ko": {
+        "title": "버섯버섯버섯",
+        "titleEn": "Triple Mushroom",
+        "tagline": "귀여운 버섯을 세 개씩 모아 없애는 매치 퍼즐",
+        "desc": [
+          "화면 가득 쌓인 버섯 중에서 같은 모양 세 개를 찾아 없애세요.",
+          "규칙은 단순하지만 한 판만 더 하게 되는, 한 손으로 즐기는 캐주얼 퍼즐입니다."
+        ]
+      },
+      "ja": {
+        "title": "きのこきのこきのこ",
+        "titleEn": "Triple Mushroom",
+        "tagline": "かわいいきのこを3つ集めて消すマッチパズル",
+        "desc": [
+          "画面いっぱいに積まれたきのこから、同じ形を3つ見つけて消しましょう。",
+          "ルールは単純なのに、もう一回だけと遊んでしまう片手カジュアルパズルです。"
+        ]
+      },
+      "en": {
+        "title": "Triple Mushroom",
+        "titleEn": "버섯버섯버섯",
+        "tagline": "Clear cute mushrooms three at a time",
+        "desc": [
+          "Find three matching mushrooms in the pile filling your screen and clear them away.",
+          "Simple rules, one-handed play, and the constant feeling that one more round can't hurt."
+        ]
+      }
     }
   },
   {
     "slug": "tripletilemaster",
-    "title": "트리플 타일 마스터",
-    "titleEn": "Triple Tile Master",
-    "tagline": "타일 세 장을 짝지어 보드를 깨끗하게",
-    "desc": [
-      "겹겹이 쌓인 타일 속에서 같은 그림 세 장을 찾아 슬롯으로 옮기세요.",
-      "순서를 잘못 고르면 슬롯이 가득 차버리는, 한 수 앞을 읽는 재미가 있는 타일 매치 게임입니다."
-    ],
     "art": "/assets/images/games/tripletilemaster.webp",
     "icon": "/assets/images/games/tripletilemaster-icon.webp",
     "stores": {
       "googleplay": "https://play.google.com/store/apps/details?id=com.playgogames.tripletilemaster"
+    },
+    "i18n": {
+      "ko": {
+        "title": "트리플 타일 마스터",
+        "titleEn": "Triple Tile Master",
+        "tagline": "타일 세 장을 짝지어 보드를 깨끗하게",
+        "desc": [
+          "겹겹이 쌓인 타일 속에서 같은 그림 세 장을 찾아 슬롯으로 옮기세요.",
+          "순서를 잘못 고르면 슬롯이 가득 차버리는, 한 수 앞을 읽는 재미가 있는 타일 매치 게임입니다."
+        ]
+      },
+      "ja": {
+        "title": "トリプルタイルマスター",
+        "titleEn": "Triple Tile Master",
+        "tagline": "タイルを3枚そろえてボードをすっきり",
+        "desc": [
+          "重なり合ったタイルの中から同じ絵柄を3枚見つけて、スロットへ運びましょう。",
+          "順番を間違えるとスロットが埋まってしまう、一手先を読む楽しさのあるタイルマッチゲームです。"
+        ]
+      },
+      "en": {
+        "title": "Triple Tile Master",
+        "titleEn": "트리플 타일 마스터",
+        "tagline": "Match three tiles and clear the board",
+        "desc": [
+          "Dig through the stacked tiles, find three of a kind, and move them to the slot.",
+          "Pick the wrong order and the slot fills up — a tile matcher about reading one move ahead."
+        ]
+      }
     }
   }
 ]

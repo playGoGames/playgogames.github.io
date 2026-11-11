@@ -1,20 +1,26 @@
 <!doctype html>
-<html lang="ko">
+<html lang="{{ t.lang if t else "ko" }}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{% if title %}{{ title }} | {{ site.name }}{% else %}{{ site.name }} · {{ site.nameEn }}{% endif %}</title>
-<meta name="description" content="{{ description or site.description }}">
+<title>{% if title %}{{ title }} | {{ site.name }}{% elif t %}{{ t.metaTitle }}{% else %}{{ site.name }} · {{ site.nameEn }}{% endif %}</title>
+<meta name="description" content="{{ description or (t.metaDesc if t) or site.description }}">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="{{ site.name }}">
-<meta property="og:title" content="{% if title %}{{ title }} | {{ site.name }}{% else %}{{ site.name }}{% endif %}">
-<meta property="og:description" content="{{ description or site.description }}">
+<meta property="og:title" content="{% if title %}{{ title }} | {{ site.name }}{% elif t %}{{ t.metaTitle }}{% else %}{{ site.name }}{% endif %}">
+<meta property="og:description" content="{{ description or (t.metaDesc if t) or site.description }}">
 <meta property="og:image" content="{{ site.url }}{{ site.ogImage }}">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+{%- if t %}
+{%- for code, l in i18n %}
+<link rel="alternate" hreflang="{{ l.lang }}" href="{{ site.url }}{{ l.permalink }}">
+{%- endfor %}
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}/">
+{%- endif %}
 <link rel="icon" href="/assets/images/common/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/assets/images/common/apple-touch-icon.png">
 <meta name="theme-color" content="#ffffff">
@@ -25,9 +31,17 @@
 </head>
 <body{% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
 
+{%- if t %}
+<nav class="lang-switch" aria-label="Language">
+  {%- for code, l in i18n %}
+  <a href="{{ l.permalink }}"{% if l.key == t.key %} aria-current="page"{% endif %} hreflang="{{ l.lang }}" lang="{{ l.lang }}">{{ l.label }}</a>
+  {%- endfor %}
+</nav>
+{%- endif %}
+
 <header class="site-header">
   <div class="wrap">
-    <a class="logo" href="/" aria-label="{{ site.name }} 홈">
+    <a class="logo" href="{{ t.permalink if t else "/" }}" aria-label="{{ (t.homeAria if t) or (site.name + " 홈") }}">
       <img src="/assets/images/common/logo.png" alt="{{ site.nameEn }}" height="28"
            onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'logo-text',textContent:'PLAYGO GAMES'}))">
     </a>
