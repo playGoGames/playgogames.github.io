@@ -11,10 +11,13 @@
     "art": "/assets/images/games/fish/keyart.webp",
     "icon": "/assets/images/games/fish/icon.webp",
     "flag": "사전예약",
-    "badge": "모바일 2026년 10월 출시 예정 · 사전예약 진행 중",
+    "badge": "2026년 11월 30일 출시 예정 · 사전예약 진행 중",
     "page": "/fish/",
     "pageLabel": "게임 소개 · 사전예약",
-    "stores": {}
+    "stores": {
+      "appstore": "https://apps.apple.com/app/id6828078404",
+      "googleplay": "https://play.google.com/store/apps/details?id=com.playgogames.fish"
+    }
   },
   {
     "slug": "catwatermelon",

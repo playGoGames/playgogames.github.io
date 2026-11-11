@@ -1,8 +1,8 @@
 {
   "slug": "fish",
-  "_linkNote": "googleplay 사전등록은 현재 일본 스토어에서만 진행 중. 비우면 배지가 사라집니다.",
+  "_linkNote": "구글플레이 사전등록은 일본 스토어에서만 진행 중. 비우면 해당 배지가 사라집니다.",
   "googleplay": "https://play.google.com/store/apps/details?id=com.playgogames.fish",
-  "appstore": "",
+  "appstore": "https://apps.apple.com/app/id6828078404",
   "steam": "https://store.steampowered.com/app/3362130",
   "_badgeNote": "공식 사전예약 배지 파일은 src/assets/images/common/ 에 둡니다. byLang 에 언어별 파일이 없으면 default 를 씁니다.",
   "badges": {
@@ -26,7 +26,7 @@
     "tagline": "일상의 작은 수수께끼를 풀다.",
     "genre": "학원 일상 미스터리 · 추리 어드벤처",
     "releaseLabel": "출시 예정",
-    "releaseDate": "모바일 2026년 10월",
+    "releaseDate": "모바일 2026년 11월 30일",
     "quote": "“내 인생에 특별한 일은 절대 일어나지 않을 것이다. 현실은 지독하게 뻔하니까.”",
     "ctaHead": "사전예약 진행 중",
     "ctaNote": [
@@ -112,7 +112,7 @@
       },
       {
         "k": "출시 예정",
-        "v": "모바일 2026년 10월 · Steam 2027년 상반기"
+        "v": "모바일 2026년 11월 30일 · Steam 2027년 상반기"
       },
       {
         "k": "이용 방식",
@@ -142,7 +142,7 @@
     "tagline": "日常の小さな謎を解く。",
     "genre": "学園日常ミステリー · 推理アドベンチャー",
     "releaseLabel": "配信予定",
-    "releaseDate": "モバイル 2026年10月",
+    "releaseDate": "モバイル 2026年11月30日",
     "quote": "「私の人生に特別なことなんて絶対起こらない。現実なんて、驚くほど退屈なものだから。」",
     "ctaHead": "事前登録受付中",
     "ctaNote": [
@@ -228,7 +228,7 @@
       },
       {
         "k": "配信予定",
-        "v": "モバイル 2026年10月 · Steam 2027年上半期"
+        "v": "モバイル 2026年11月30日 · Steam 2027年上半期"
       },
       {
         "k": "価格",
@@ -258,7 +258,7 @@
     "tagline": "Unravel the small mysteries of everyday life.",
     "genre": "School slice-of-life mystery · Deduction adventure",
     "releaseLabel": "Coming",
-    "releaseDate": "Mobile — October 2026",
+    "releaseDate": "Mobile — 30 November 2026",
     "quote": "“Nothing special will ever happen in my life. Reality is painfully predictable.”",
     "ctaHead": "Pre-register now",
     "ctaNote": [
@@ -344,7 +344,7 @@
       },
       {
         "k": "Release",
-        "v": "Mobile October 2026 · Steam H1 2027"
+        "v": "Mobile 30 November 2026 · Steam H1 2027"
       },
       {
         "k": "Price",
