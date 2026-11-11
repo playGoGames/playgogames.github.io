@@ -1,22 +1,22 @@
 {
   "slug": "fish",
-  "_linkNote": "구글플레이 사전등록은 일본 스토어에서만 진행 중. 비우면 해당 배지가 사라집니다.",
+  "_linkNote": "구글플레이 스토어 등록은 현재 일본만. 비우면 해당 배지가 사라집니다.",
   "googleplay": "https://play.google.com/store/apps/details?id=com.playgogames.fish",
   "appstore": "https://apps.apple.com/app/id6828078404",
   "steam": "https://store.steampowered.com/app/3362130",
-  "_badgeNote": "공식 사전예약 배지 파일은 src/assets/images/common/ 에 둡니다. byLang 에 언어별 파일이 없으면 default 를 씁니다.",
+  "_badgeNote": "일반 스토어 배지. 브랜드 가이드상 색상·비율을 바꾸지 않고 원본 그대로 씁니다.",
   "badges": {
     "googleplay": {
-      "default": "/assets/images/common/badge-googleplay-prereg.png",
+      "default": "/assets/images/common/badge-googleplay.png",
       "byLang": {},
-      "w": 565,
-      "h": 168
+      "w": 233,
+      "h": 78
     },
     "appstore": {
-      "default": "/assets/images/common/badge-appstore-preorder.png",
+      "default": "/assets/images/common/badge-appstore.png",
       "byLang": {},
-      "w": 503,
-      "h": 168
+      "w": 233,
+      "h": 78
     }
   },
   "ko": {
@@ -28,12 +28,12 @@
     "releaseLabel": "출시 예정",
     "releaseDate": "모바일 2026년 11월 30일",
     "quote": "“내 인생에 특별한 일은 절대 일어나지 않을 것이다. 현실은 지독하게 뻔하니까.”",
-    "ctaHead": "사전예약 진행 중",
+    "ctaHead": "스토어에서 만나보세요",
     "ctaNote": [
-      "사전예약은 무료입니다.",
-      "출시되면 가장 먼저 알려드립니다."
+      "무료로 내려받을 수 있습니다.",
+      "일부 챕터는 유료입니다."
     ],
-    "pregegAlt": "Google Play 사전등록",
+    "pregegAlt": "Google Play에서 다운로드",
     "storyHead": "게임 소개",
     "story": [
       "환상을 믿지 않는 냉소적인 고등학생 주인공은 평범하고 편안한 삶을 목표로 기숙형 고등학교에 입학합니다. 하지만 새 학기에 적응하기도 전에 기묘한 소문들이 들려옵니다. 언뜻 들으면 판타지 같은 이야기에 주인공은 말도 안 된다며 코웃음치지만, 기숙사 502호 룸메이트들의 눈은 반짝입니다.",
@@ -128,7 +128,7 @@
     "noticeHead": "기존 제목 안내",
     "notice": "모바일 출시를 앞두고 게임 제목을 《502호실》에서 《물고기는 날지 않는다》로 변경했습니다. 현재 Steam에서는 기존 제목인 《502호》로 표기되어 있습니다.",
     "closing": "물고기는 날지 않는다. 그렇게 믿었던 소녀의 이야기가 시작됩니다.",
-    "regionNote": "사전예약은 현재 일본 구글플레이 스토어에서만 진행 중입니다.",
+    "regionNote": "현재 일본 구글플레이 스토어에서만 제공됩니다.",
     "pcLink": "PC(Steam)판 《502호》 보기"
   },
   "ja": {
@@ -140,12 +140,12 @@
     "releaseLabel": "配信予定",
     "releaseDate": "モバイル 2026年11月30日",
     "quote": "「私の人生に特別なことなんて絶対起こらない。現実なんて、驚くほど退屈なものだから。」",
-    "ctaHead": "事前登録受付中",
+    "ctaHead": "ストアでチェック",
     "ctaNote": [
-      "事前登録は無料です。",
-      "配信開始をいち早くお知らせします。"
+      "基本プレイ無料です。",
+      "一部のチャプターは有料です。"
     ],
-    "pregegAlt": "Google Play 事前登録",
+    "pregegAlt": "Google Play で手に入れよう",
     "storyHead": "ゲーム紹介",
     "story": [
       "幻想なんて信じていない冷めた高校生の主人公が、平凡で穏やかな毎日を夢見て寄宿制高校に入学する。しかし新学期に馴染む間もなく、奇妙な噂の数々が耳に入ってくる。ファンタジーのような話に主人公は呆れ顔。けれど寮502号室のルームメイトたちの瞳は、期待で輝いていた。",
@@ -252,12 +252,12 @@
     "releaseLabel": "Coming",
     "releaseDate": "Mobile — 30 November 2026",
     "quote": "“Nothing special will ever happen in my life. Reality is painfully predictable.”",
-    "ctaHead": "Pre-register now",
+    "ctaHead": "Find it on your store",
     "ctaNote": [
-      "Pre-registration is free.",
-      "We'll let you know the moment it launches."
+      "Free to download.",
+      "Some chapters are paid."
     ],
-    "pregegAlt": "Pre-register on Google Play",
+    "pregegAlt": "Get it on Google Play",
     "storyHead": "About the game",
     "story": [
       "A cynical high school girl who never bought into fantasy enrolls in a quiet boarding school, hoping for a calm, ordinary life. But before she can even settle in, strange rumors begin to reach her. She scoffs at every story, while her roommates in Room 502 watch with sparkling eyes.",
@@ -352,7 +352,7 @@
     "noticeHead": "A note on the title",
     "notice": "Ahead of the mobile release the game was renamed from Room 502 to Where Fish Fly. The Steam page is still listed under the former title, Room 502.",
     "closing": "Fish don't fly. So she believed. Her story begins here.",
-    "regionNote": "Pre-registration is currently available on the Japanese Google Play store only.",
+    "regionNote": "Currently available on the Japanese Google Play store only.",
     "pcLink": "See the PC (Steam) version, Room 502"
   },
   "_steamNote": "스팀(502호) 소개는 /room502/ 로 분리했습니다."

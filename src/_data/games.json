@@ -3,7 +3,6 @@
     "slug": "wherefishfly",
     "art": "/assets/images/games/fish/keyart.webp",
     "icon": "/assets/images/games/fish/icon.webp",
-    "page": "/fish/",
     "stores": {
       "appstore": "https://apps.apple.com/app/id6828078404",
       "googleplay": "https://play.google.com/store/apps/details?id=com.playgogames.fish"
@@ -16,10 +15,7 @@
         "desc": [
           "환상을 믿지 않는 고등학생이 기숙사 502호 룸메이트들과 학교의 기묘한 소문을 파헤칩니다.",
           "낮에는 탐문하고 밤에는 추리하는, 사람이 죽지 않는 학원 일상 미스터리 어드벤처입니다."
-        ],
-        "flag": "사전예약",
-        "badge": "2026년 11월 30일 출시 예정 · 사전예약 진행 중",
-        "pageLabel": "게임 소개 · 사전예약"
+        ]
       },
       "ja": {
         "title": "魚は飛ばない",
@@ -28,10 +24,7 @@
         "desc": [
           "幻想を信じない高校生が、寮502号室のルームメイトたちと学校の奇妙な噂を解き明かします。",
           "昼は調査、夜は推理。人が死なない学園日常ミステリーアドベンチャーです。"
-        ],
-        "flag": "事前登録",
-        "badge": "2026年11月30日 配信予定 · 事前登録受付中",
-        "pageLabel": "ゲーム紹介 · 事前登録"
+        ]
       },
       "en": {
         "title": "Where Fish Fly",
@@ -40,10 +33,7 @@
         "desc": [
           "A high schooler who never bought into fantasy digs into the strange rumors on campus with her roommates in Room 502.",
           "Gather clues by day, deduce by night — a cozy school mystery adventure where no one dies."
-        ],
-        "flag": "Pre-order",
-        "badge": "Coming 30 November 2026 · Pre-registration open",
-        "pageLabel": "About the game · Pre-register"
+        ]
       }
     }
   },
