@@ -799,3 +799,11 @@ improvedigital.com, 2534, RESELLER
 opera.com, pub6843437470464, RESELLER, 55a0c5fd61378de3
 loopme.com, 15629, RESELLER, 6c8d5f95897a5a3b
 video.unrulymedia.com, 389957698, RESELLER
+# AppLovin MAX 추가 재판매 파트너 (2026-11-11, AppLovin 대시보드 App-ads.txt Info 기준)
+adyoulike.com, 2d578cf695c89ec2ba707280319d2020, RESELLER
+bidease.com, bidease_seller_26, RESELLER
+bigo.sg, qyfoptvec9, RESELLER
+improvedigital.com, 2602, RESELLER
+indexexchange.com, 211341, RESELLER, 50b1c356f2c5c8fc
+taurusx.com, 70119, RESELLER
+video.unrulymedia.com, 841707281, RESELLER, 98c21ef9a666c68b
